@@ -84,3 +84,15 @@
     zoom: 75%;
   }
 }
+
+@media only screen and (hover: none) and (pointer: coarse) {
+    .mobile\:hidden {
+        display: none;
+    }
+}
+
+@media not screen and (hover: none) and (pointer: coarse) {
+    .desktop\:hidden {
+        display: none;
+    }
+}
