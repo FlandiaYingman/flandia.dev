@@ -149,8 +149,7 @@ export const RESUME_DATA = {
         "Material Design",
         "ChatGPT",
       ],
-      description:
-        "A website arranging and providing almost all artworks extracted from Arknights (a mobile game).",
+      description: "An improved ChatGPT frontend for HKUST’s ChatGPT API.",
       status: "wip",
       link: null,
     },
