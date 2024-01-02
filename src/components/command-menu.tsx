@@ -23,7 +23,13 @@ export const CommandMenu = ({ links }: Props) => {
 
   React.useEffect(() => {
     const down = (e: KeyboardEvent) => {
-      if (e.key === "c") {
+      if (
+        e.key === "c" &&
+        !e.ctrlKey &&
+        !e.altKey &&
+        !e.shiftKey &&
+        !e.metaKey
+      ) {
         e.preventDefault();
         setOpen((open) => !open);
       }
