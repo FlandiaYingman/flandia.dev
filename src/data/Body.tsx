@@ -66,20 +66,20 @@ const Body = () => (
     </Section>
     <Section>
       <SectionTitle>Work Experience</SectionTitle>
-      <Entry>
-        <EntryTitle>CSE, HKUST</EntryTitle>
-        <EntrySubtitle>Undergraduate Teaching Assistant</EntrySubtitle>
-        <EntryTime>2024 Spring</EntryTime>
-        <EntryBadges>
-          <LightBadge>Provisional</LightBadge>
-          <LightBadge>UGTA</LightBadge>
-        </EntryBadges>
-        <EntryDescription>
-          After taking the course COMP 2011 (Programming with C++) in HKUST in
-          2023 fall, an instructor invited me to become an UGTA. I accepted and
-          will become an UGTA for this course in the next semester.
-        </EntryDescription>
-      </Entry>
+      {/*<Entry>*/}
+      {/*  <EntryTitle>CSE, HKUST</EntryTitle>*/}
+      {/*  <EntrySubtitle>Undergraduate Teaching Assistant</EntrySubtitle>*/}
+      {/*  <EntryTime>2024 Spring</EntryTime>*/}
+      {/*  <EntryBadges>*/}
+      {/*    <LightBadge>Provisional</LightBadge>*/}
+      {/*    <LightBadge>UGTA</LightBadge>*/}
+      {/*  </EntryBadges>*/}
+      {/*  <EntryDescription>*/}
+      {/*    After taking the course COMP 2011 (Programming with C++) in HKUST in*/}
+      {/*    2023 fall, an instructor invited me to become an UGTA. I accepted and*/}
+      {/*    will become an UGTA for this course in the next semester.*/}
+      {/*  </EntryDescription>*/}
+      {/*</Entry>*/}
       <Entry>
         <EntryTitle>USThing</EntryTitle>
         <EntrySubtitle>Backend Developer</EntrySubtitle>
