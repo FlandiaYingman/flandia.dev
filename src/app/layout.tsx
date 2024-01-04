@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 
 import "./globals.css";
 import React from "react";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "",
@@ -21,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang="en" className={cn(inter.className)}>
       <body>{children}</body>
     </html>
   );
