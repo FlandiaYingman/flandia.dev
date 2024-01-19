@@ -139,6 +139,8 @@ const Body = () => (
             <DarkBadge>GenAI</DarkBadge>
             <DarkBadge>Video Games</DarkBadge>
             <DarkBadge>Mobile Games</DarkBadge>
+            <DarkBadge>Adobe Photoshop</DarkBadge>
+            <DarkBadge>Adobe Premiere Pro</DarkBadge>
           </Badges>
         </EntryDescription>
       </Entry>
