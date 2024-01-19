@@ -36,7 +36,7 @@ export function Badge({ className, variant, ...props }: BadgeProps) {
 }
 
 export const Badges = (props: PropsWithChildren) => (
-  <span className="inline-flex gap-x-1" {...props} />
+  <span className="inline-flex gap-x-1 gap-y-1 flex-wrap" {...props} />
 );
 export const DarkBadge = ({ children }: PropsWithChildren) => (
   <Badge>{children}</Badge>
