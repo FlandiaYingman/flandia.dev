@@ -71,7 +71,7 @@ const Head = () => (
       Enthusiastic software developer with experience in developing and
       maintaining websites and applications.
       <br />
-      Work hard; play hard.
+      <i>Work hard. Play hard. </i>
     </About>
     <Location href="https://maps.app.goo.gl/YZuY7rM4Mf9mvP9i8">
       HKUST, Hong Kong SAR
