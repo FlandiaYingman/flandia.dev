@@ -9,8 +9,8 @@ import {
 } from "@/components/Entry";
 import { Badges, DarkBadge, LightBadge } from "@/components/ui/Badge";
 import {
-  ProjectBadges,
   Project,
+  ProjectBadges,
   ProjectCards,
   ProjectDescription,
   ProjectLabel,
@@ -23,9 +23,10 @@ const Body = () => (
     <Section>
       <SectionTitle>About</SectionTitle>
       <SectionText>
-        Highly interested in Computer Science and passionate about learning new
-        technologies through hands-on experience. Excellent team player with a
-        strong ability to share knowledge and collaborate with others.
+        I am highly interested in Computer Science and passionate about learning
+        new technologies through hands-on experience. I am also an excellent
+        team player with a strong ability to share knowledge and collaborate
+        with others.
       </SectionText>
     </Section>
     <Section>
@@ -75,9 +76,10 @@ const Body = () => (
           <LightBadge>UGTA</LightBadge>
         </EntryBadges>
         <EntryDescription>
-          After taking the course COMP 2011 (Programming with C++) in HKUST in
-          2023 fall, an instructor invited me to become an UGTA. I accepted and
-          will become a UGTA for this course in the next semester.
+          After taking the course COMP 2011 (Programming with C++) at HKUST in
+          Fall 2023, an instructor invited me to become a UGTA. I accepted the
+          offer and will serve as a UGTA for this course in the upcoming
+          semester.
         </EntryDescription>
       </Entry>
       <Entry>
@@ -88,9 +90,9 @@ const Body = () => (
           <LightBadge>Volunteer</LightBadge>
         </EntryBadges>
         <EntryDescription>
-          USThing is a student-developed all-in-one App for HKUST. It is made up
-          of passionate and talented students who work towards the continual
-          betterment of the app and the HKUST student community.
+          USThing is a student-developed all-in-one app for HKUST. The team
+          consists of passionate and talented students who work towards
+          continually improving the app and the HKUST student community.
         </EntryDescription>
       </Entry>
     </Section>
@@ -169,8 +171,8 @@ const Body = () => (
         <Project href="https://flandia.dev">
           <ProjectTitle>the Home Page</ProjectTitle>
           <ProjectDescription>
-            A résumé-like home page of myself (this page). It is also a
-            collection of some of my projects.
+            A résumé-like home page for myself (this page). This page also
+            showcases a collection of some of my projects.
           </ProjectDescription>
           <ProjectBadges>
             <LightBadge>Side Project</LightBadge>
@@ -188,7 +190,8 @@ const Body = () => (
         <Project href="https://chat-at-ust.flandia.dev/">
           <ProjectTitle>Chat @ UST</ProjectTitle>
           <ProjectDescription>
-            An improved ChatGPT frontend for HKUST’s ChatGPT API. It is currently under beta testing phase.
+            An improved ChatGPT frontend for HKUST’s ChatGPT API. It is
+            currently under beta testing phase.
           </ProjectDescription>
           <ProjectBadges>
             <LightBadge>Side Project</LightBadge>
