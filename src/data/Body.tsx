@@ -1,8 +1,10 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Section, SectionText, SectionTitle } from "@/components/ui/Section";
 import {
   Entry,
   EntryBadges,
   EntryDescription,
+  EntryDetails,
   EntrySubtitle,
   EntryTime,
   EntryTitle,
@@ -17,6 +19,13 @@ import {
   ProjectTitle,
 } from "@/components/Project";
 import React from "react";
+import {
+  SubEntry,
+  SubEntryBadges,
+  SubEntryDescription,
+  SubEntrySubtitle, SubEntryTime,
+  SubEntryTitle
+} from "@/components/sub-entry";
 
 const Body = () => (
   <>
@@ -38,6 +47,68 @@ const Body = () => (
           Undeclared)
         </EntrySubtitle>
         <EntryTime>2023 - 2027 (pursuing)</EntryTime>
+        <EntryDetails>
+          Courses
+          <SubEntry>
+            <SubEntryTitle>COMP 2011 Programming with C++</SubEntryTitle>
+            <SubEntryTime>2023-24 Fall</SubEntryTime>
+            <SubEntryBadges>
+              <LightBadge>A+</LightBadge>
+              <LightBadge>MT: 100/100</LightBadge>
+              <LightBadge>F: 97/100</LightBadge>
+            </SubEntryBadges>
+            <SubEntrySubtitle>Trust in yourself.</SubEntrySubtitle>
+            <SubEntryDescription>
+              Previously, although I had some experience in writing code, I
+              seldom used C++ to write programs. I have never thought I
+              could perform so well in this course (if I did, I would have taken
+              COMP 2012H). The instructors said I was the only one who got full
+              marks ^^. Now, I serve as a UGTA for this course, devoting myself
+              to helping more students.
+            </SubEntryDescription>
+          </SubEntry>
+          <SubEntry>
+            <SubEntryTitle>COMP 2211 Exploring AI</SubEntryTitle>
+            <SubEntryTime>2023-24 Fall</SubEntryTime>
+            <SubEntryBadges>
+              <LightBadge>
+                A+ / 1<sup>st</sup>
+              </LightBadge>
+              <LightBadge>
+                MT: 91/100 2<sup>st</sup>
+              </LightBadge>
+              <LightBadge>
+                F: 91.4/100 1<sup>st</sup>
+              </LightBadge>
+            </SubEntryBadges>
+            <SubEntrySubtitle>
+              You can do it if you have the will.
+            </SubEntrySubtitle>
+            <SubEntryDescription>
+              <p>
+                Just as the name suggests, this course does not require any
+                prior knowledge to artificial intelligence. I believe that I was
+                one of the random students who have just intermediate prior
+                knowledge to AI:
+              </p>
+              <ul>
+                <li>Python without Third Party Libraries: Skilled</li>
+                <li>Python with Third Party Libraries: 0</li>
+                <li>Single Variable Calculus & Basic Linear Algebra: Brief</li>
+                <li>Multivariable Calculus: 0</li>
+                <li>Artificial Intelligence: 0</li>
+              </ul>
+              <p>
+                However, I still performed well (very well!) in this course. I
+                believe it should be attributed to good instructors, willingness
+                to learn and ask, and a brave heart to discover.
+              </p>
+              <p>
+                I plan to serve as a UGTA for this course in the next semester.
+              </p>
+            </SubEntryDescription>
+          </SubEntry>
+        </EntryDetails>
       </Entry>
     </Section>
     <Section>
