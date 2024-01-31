@@ -4,20 +4,26 @@ import { createHost, createSlot } from "create-slots";
 import React, { PropsWithChildren } from "react";
 import { Card, CardContent, CardHeader } from "@/components/ui/Card";
 import { Badges } from "@/components/ui/Badge";
+import { ChevronsDownUp, ChevronsUpDown } from "lucide-react";
+import { Collapsible, CollapsibleContent } from "@/components/ui/collapsible";
 
 export const EntryTitle = createSlot();
 export const EntrySubtitle = createSlot();
 export const EntryTime = createSlot();
 export const EntryBadges = createSlot();
 export const EntryDescription = createSlot();
+export const EntryDetails = createSlot();
 
-export const Entry = ({ children }: PropsWithChildren) =>
-  createHost(children, (Slots) => {
+export const Entry = ({ children }: PropsWithChildren) => {
+  const [collapseOpen, setCollapseOpen] = React.useState(false);
+  return createHost(children, (Slots) => {
     const title = Slots.getProps(EntryTitle);
     const subtitle = Slots.getProps(EntrySubtitle);
     const time = Slots.getProps(EntryTime);
     const badges = Slots.getProps(EntryBadges);
     const description = Slots.getProps(EntryDescription);
+    const details = Slots.getProps(EntryDetails);
+
     return (
       <Card>
         <CardHeader>
@@ -30,7 +36,25 @@ export const Entry = ({ children }: PropsWithChildren) =>
           </div>
           <h4 className="font-mono text-sm leading-none" {...subtitle} />
         </CardHeader>
-        <CardContent className="mt-2 text-xs" {...description} />
+        {description && <CardContent className="mt-2 text-xs" {...description} />}
+        {details && (
+          <>
+            <div
+              className="ml-auto cursor-pointer select-none h-4 w-4 print:hidden"
+              onClick={() => {
+                setCollapseOpen(!collapseOpen);
+              }}
+            >
+              {collapseOpen ? <ChevronsDownUp className="h-4 w-4"/> : <ChevronsUpDown className="h-4 w-4" />}
+            </div>
+            <Collapsible open={collapseOpen}>
+              <CollapsibleContent>
+                <CardContent className="mt-2 space-y-2 text-sm" {...details} />
+              </CollapsibleContent>
+            </Collapsible>
+          </>
+        )}
       </Card>
     );
   });
+};
