@@ -72,14 +72,12 @@ const Body = () => (
         <EntrySubtitle>Undergraduate Teaching Assistant</EntrySubtitle>
         <EntryTime>2024 Spring</EntryTime>
         <EntryBadges>
-          <LightBadge>Provisional</LightBadge>
           <LightBadge>UGTA</LightBadge>
         </EntryBadges>
         <EntryDescription>
           After taking the course COMP 2011 (Programming with C++) at HKUST in
           Fall 2023, an instructor invited me to become a UGTA. I accepted the
-          offer and will serve as a UGTA for this course in the upcoming
-          semester.
+          offer and will serve as a UGTA for this course in the semester.
         </EntryDescription>
       </Entry>
       <Entry>
