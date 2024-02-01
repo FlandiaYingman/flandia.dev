@@ -106,6 +106,17 @@ const Body = () => (
               <p>
                 I plan to serve as a UGTA for this course in the next semester.
               </p>
+              <p>
+                If you want to know more about this course, you can refer to{" "}
+                <a
+                  href="https://www.overleaf.com/project/65bb73df16e78bd0c65553ad"
+                  target="_blank"
+                  className="underline"
+                >
+                  my notes
+                </a>
+                .
+              </p>
             </SubEntryDescription>
           </SubEntry>
         </EntryDetails>
