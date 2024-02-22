@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Metadata } from "next";
 import React from "react";
 import Head from "@/data/Head";
@@ -6,18 +7,11 @@ import Avatar from "@/data/Avatar";
 import { str } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: str(
-    <>
-      LI, Yu Hong Harry | Enthusiastic software developer with experience in
-      developing and maintaining websites and applications. Work hard; play
-      hard.
-    </>,
-  ),
+  title: "LI, Yu Hong Harry | 李裕康",
   description: str(
     <>
-      Highly interested in Computer Science and passionate about learning new
-      technologies through hands-on experience. Excellent team player with a
-      strong ability to share knowledge and collaborate with others.
+      Enthusiastic software developer with experience in developing and
+      maintaining apps, websites and server software. Work hard. Play hard.
     </>,
   ),
 };
