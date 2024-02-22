@@ -36,16 +36,22 @@ export const Entry = ({ children }: PropsWithChildren) => {
           </div>
           <h4 className="font-mono text-sm leading-none" {...subtitle} />
         </CardHeader>
-        {description && <CardContent className="mt-2 text-xs" {...description} />}
+        {description && (
+          <CardContent className="mt-2 text-xs" {...description} />
+        )}
         {details && (
           <>
             <div
-              className="ml-auto cursor-pointer select-none h-4 w-4 print:hidden"
+              className="ml-auto h-4 w-4 cursor-pointer select-none print:hidden"
               onClick={() => {
                 setCollapseOpen(!collapseOpen);
               }}
             >
-              {collapseOpen ? <ChevronsDownUp className="h-4 w-4"/> : <ChevronsUpDown className="h-4 w-4" />}
+              {collapseOpen ? (
+                <ChevronsDownUp className="h-4 w-4" />
+              ) : (
+                <ChevronsUpDown className="h-4 w-4" />
+              )}
             </div>
             <Collapsible open={collapseOpen}>
               <CollapsibleContent>

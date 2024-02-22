@@ -23,8 +23,9 @@ import {
   SubEntry,
   SubEntryBadges,
   SubEntryDescription,
-  SubEntrySubtitle, SubEntryTime,
-  SubEntryTitle
+  SubEntrySubtitle,
+  SubEntryTime,
+  SubEntryTitle,
 } from "@/components/sub-entry";
 
 const Body = () => (
@@ -60,11 +61,11 @@ const Body = () => (
             <SubEntrySubtitle>Trust in yourself.</SubEntrySubtitle>
             <SubEntryDescription>
               Previously, although I had some experience in writing code, I
-              seldom used C++ to write programs. I have never thought I
-              could perform so well in this course (if I did, I would have taken
-              COMP 2012H). The instructors said I was the only one who got full
-              marks ^^. Now, I serve as a UGTA for this course, devoting myself
-              to helping more students.
+              seldom used C++ to write programs. I have never thought I could
+              perform so well in this course (if I did, I would have taken COMP
+              2012H). The instructors said I was the only one who got full marks
+              ^^. Now, I serve as a UGTA for this course, devoting myself to
+              helping more students.
             </SubEntryDescription>
           </SubEntry>
           <SubEntry>
