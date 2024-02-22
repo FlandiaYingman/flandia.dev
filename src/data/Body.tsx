@@ -7,7 +7,7 @@ import {
   EntryDetails,
   EntrySubtitle,
   EntryTime,
-  EntryTitle,
+  EntryTitle
 } from "@/components/Entry";
 import { Badges, DarkBadge, LightBadge } from "@/components/ui/Badge";
 import {
@@ -16,17 +16,21 @@ import {
   ProjectCards,
   ProjectDescription,
   ProjectLabel,
-  ProjectTitle,
+  ProjectTitle
 } from "@/components/Project";
 import React from "react";
-import {
-  SubEntry,
-  SubEntryBadges,
-  SubEntryDescription,
-  SubEntrySubtitle,
-  SubEntryTime,
-  SubEntryTitle,
-} from "@/components/sub-entry";
+import { SubEntry, SubEntryBadges, SubEntryDescription, SubEntryTime, SubEntryTitle } from "@/components/sub-entry";
+
+function a(href: string) {
+  // eslint-disable-next-line react/display-name
+  return (children: string) => (
+    <a href={href} target="_blank" className="underline">
+      {children}
+    </a>
+  );
+}
+
+const COMP2211_NOTES = a("https://www.overleaf.com/read/vxpjvbsxqfxm#43f239");
 
 const Body = () => (
   <>
@@ -49,75 +53,37 @@ const Body = () => (
         </EntrySubtitle>
         <EntryTime>2023 - 2027 (pursuing)</EntryTime>
         <EntryDetails>
-          Courses
           <SubEntry>
             <SubEntryTitle>COMP 2011 Programming with C++</SubEntryTitle>
             <SubEntryTime>2023-24 Fall</SubEntryTime>
             <SubEntryBadges>
               <LightBadge>A+</LightBadge>
-              <LightBadge>MT: 100/100</LightBadge>
+              <LightBadge>MT: 100/100 1<sup>nd</sup></LightBadge>
               <LightBadge>F: 97/100</LightBadge>
             </SubEntryBadges>
-            <SubEntrySubtitle>Trust in yourself.</SubEntrySubtitle>
             <SubEntryDescription>
-              Previously, although I had some experience in writing code, I
-              seldom used C++ to write programs. I have never thought I could
-              perform so well in this course (if I did, I would have taken COMP
-              2012H). The instructors said I was the only one who got full marks
-              ^^. Now, I serve as a UGTA for this course, devoting myself to
-              helping more students.
+              Currently, I am serving as an Undergraduate Teaching Assistant
+              (UGTA) for this course, dedicating my efforts to assisting fellow
+              students, following the example set by those who previously helped
+              me.
             </SubEntryDescription>
           </SubEntry>
           <SubEntry>
             <SubEntryTitle>COMP 2211 Exploring AI</SubEntryTitle>
             <SubEntryTime>2023-24 Fall</SubEntryTime>
             <SubEntryBadges>
+              <LightBadge>A+</LightBadge>
               <LightBadge>
-                A+ / 1<sup>st</sup>
-              </LightBadge>
-              <LightBadge>
-                MT: 91/100 2<sup>st</sup>
+                MT: 91/100 2<sup>nd</sup>
               </LightBadge>
               <LightBadge>
                 F: 91.4/100 1<sup>st</sup>
               </LightBadge>
             </SubEntryBadges>
-            <SubEntrySubtitle>
-              You can do it if you have the will.
-            </SubEntrySubtitle>
             <SubEntryDescription>
-              <p>
-                Just as the name suggests, this course does not require any
-                prior knowledge to artificial intelligence. I believe that I was
-                one of the random students who have just intermediate prior
-                knowledge to AI:
-              </p>
-              <ul>
-                <li>Python without Third Party Libraries: Skilled</li>
-                <li>Python with Third Party Libraries: 0</li>
-                <li>Single Variable Calculus & Basic Linear Algebra: Brief</li>
-                <li>Multivariable Calculus: 0</li>
-                <li>Artificial Intelligence: 0</li>
-              </ul>
-              <p>
-                However, I still performed well (very well!) in this course. I
-                believe it should be attributed to good instructors, willingness
-                to learn and ask, and a brave heart to discover.
-              </p>
-              <p>
-                I plan to serve as a UGTA for this course in the next semester.
-              </p>
-              <p>
-                If you want to know more about this course, you can refer to{" "}
-                <a
-                  href="https://www.overleaf.com/project/65bb73df16e78bd0c65553ad"
-                  target="_blank"
-                  className="underline"
-                >
-                  my notes
-                </a>
-                .
-              </p>
+              I plan to serve as a UGTA for this course in the next semester. If
+              you want to know more about this course, you can refer to{" "}
+              {COMP2211_NOTES("my notes")}.
             </SubEntryDescription>
           </SubEntry>
         </EntryDetails>

@@ -31,7 +31,9 @@ export const SubEntry = ({ children }: PropsWithChildren) =>
               {...time}
             />
           </div>
-          <h4 className="font-mono text-sm leading-none" {...subtitle} />
+          {subtitle && (
+            <h4 className="font-mono text-sm leading-none" {...subtitle} />
+          )}
         </CardHeader>
         <CardContent className="mt-2 space-y-1 text-xs" {...description} />
       </Card>
