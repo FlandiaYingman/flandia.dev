@@ -69,7 +69,7 @@ const Head = () => (
     <Name>LI, Yu Hong Harry</Name>
     <About>
       Enthusiastic software developer with experience in developing and
-      maintaining websites and applications.
+      maintaining apps, websites and server software.
       <br />
       <i>Work hard. Play hard. </i>
     </About>
