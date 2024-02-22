@@ -58,7 +58,9 @@ const Body = () => (
             <SubEntryTime>2023-24 Fall</SubEntryTime>
             <SubEntryBadges>
               <LightBadge>A+</LightBadge>
-              <LightBadge>MT: 100/100 1<sup>nd</sup></LightBadge>
+              <LightBadge>
+                MT: 100/100 1<sup>nd</sup>
+              </LightBadge>
               <LightBadge>F: 97/100</LightBadge>
             </SubEntryBadges>
             <SubEntryDescription>
@@ -219,6 +221,23 @@ const Body = () => (
             <LightBadge>PostgreSQL</LightBadge>
             <LightBadge>Docker</LightBadge>
             <LightBadge>Arknights</LightBadge>
+          </ProjectBadges>
+          <ProjectLabel>arkwaifu.cc</ProjectLabel>
+        </Project>
+        <Project href="https://ust-rankings.com">
+          <ProjectTitle>UST Rankings</ProjectTitle>
+          <ProjectDescription>
+            UST Rankings provides a basic rankings for instructors at HKUST,
+            based on their teaching performance... and more!
+          </ProjectDescription>
+          <ProjectBadges>
+            <LightBadge>Contributor</LightBadge>
+            <LightBadge>Beta Phase</LightBadge>
+            <LightBadge>Next.js</LightBadge>
+            <LightBadge>React</LightBadge>
+            <LightBadge>Vercel</LightBadge>
+            <LightBadge>shadcn/ui</LightBadge>
+            <LightBadge>Tailwind CSS</LightBadge>
           </ProjectBadges>
           <ProjectLabel>arkwaifu.cc</ProjectLabel>
         </Project>
