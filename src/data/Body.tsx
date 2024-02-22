@@ -239,7 +239,7 @@ const Body = () => (
             <LightBadge>shadcn/ui</LightBadge>
             <LightBadge>Tailwind CSS</LightBadge>
           </ProjectBadges>
-          <ProjectLabel>arkwaifu.cc</ProjectLabel>
+          <ProjectLabel>ust-rankings.com</ProjectLabel>
         </Project>
         <Project href="https://flandia.dev">
           <ProjectTitle>the Home Page</ProjectTitle>
