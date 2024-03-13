@@ -59,7 +59,7 @@ const Body = () => (
             <SubEntryBadges>
               <LightBadge>A+</LightBadge>
               <LightBadge>
-                MT: 100/100 1<sup>st</sup>
+                MT: 100/100 1<sup>nd</sup>
               </LightBadge>
               <LightBadge>F: 97/100</LightBadge>
             </SubEntryBadges>
@@ -279,6 +279,46 @@ const Body = () => (
         </Project>
       </ProjectCards>
     </Section>
+    <Section>
+      <SectionTitle>Gratitude to Educators</SectionTitle>
+      <Entry>
+        <EntryTitle>
+          Dr. ALTMAN, Micheal Scott
+        </EntryTitle>
+        <EntrySubtitle>
+          Department of Physics, HKUST
+        </EntrySubtitle>
+        <EntryTime>2023 Fall</EntryTime>
+      </Entry>
+      <Entry>
+        <EntryTitle>
+          Dr. LI, Xin Cindy
+        </EntryTitle>
+        <EntrySubtitle>
+          Department of Computer Science and Engineering, HKUST
+        </EntrySubtitle>
+        <EntryTime>2023 Fall, 2024 Spring</EntryTime>
+      </Entry>
+      <Entry>
+        <EntryTitle>
+          Dr TSOI, Yau Chat Desmond
+        </EntryTitle>
+        <EntrySubtitle>
+          Department of Computer Science and Engineering, HKUST
+        </EntrySubtitle>
+        <EntryTime>2023 Fall, 2024 Spring</EntryTime>
+      </Entry>
+      <Entry>
+        <EntryTitle>
+          Ms. WANG, Hannah
+        </EntryTitle>
+        <EntrySubtitle>
+          ...
+        </EntrySubtitle>
+        <EntryTime>...</EntryTime>
+      </Entry>
+    </Section>
+
   </>
 );
 
