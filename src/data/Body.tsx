@@ -51,7 +51,7 @@ const Body = () => (
           Bachelor of Engineering with an Extended Major in AI (Discipline
           Undeclared)
         </EntrySubtitle>
-        <EntryTime>2023 - 2027 (pursuing)</EntryTime>
+        <EntryTime>2023 - 2027 (Pursuing)</EntryTime>
         <EntryDetails>
           <SubEntry>
             <SubEntryTitle>COMP 2011 Programming with C++</SubEntryTitle>
