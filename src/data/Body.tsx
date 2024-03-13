@@ -116,11 +116,11 @@ const Body = () => (
         <EntryTime>2023</EntryTime>
       </Entry>
       <Entry>
-        <EntryTitle>Dean's List (2023 Fall)</EntryTitle>
+        <EntryTitle>Dean's List</EntryTitle>
         <EntrySubtitle>
           Hong Kong University of Science and Technology
         </EntrySubtitle>
-        <EntryTime>2024</EntryTime>
+        <EntryTime>2023-24 Fall</EntryTime>
       </Entry>
     </Section>
     <Section>
@@ -128,7 +128,7 @@ const Body = () => (
       <Entry>
         <EntryTitle>CSE, HKUST</EntryTitle>
         <EntrySubtitle>Undergraduate Teaching Assistant</EntrySubtitle>
-        <EntryTime>2024 Spring</EntryTime>
+        <EntryTime>2023-24 Spring</EntryTime>
         <EntryBadges>
           <LightBadge>UGTA</LightBadge>
         </EntryBadges>
@@ -141,7 +141,7 @@ const Body = () => (
       <Entry>
         <EntryTitle>USThing</EntryTitle>
         <EntrySubtitle>Backend Developer</EntrySubtitle>
-        <EntryTime>2023 Fall - Now</EntryTime>
+        <EntryTime>2023-24 Fall - Now</EntryTime>
         <EntryBadges>
           <LightBadge>Volunteer</LightBadge>
         </EntryBadges>
@@ -288,7 +288,7 @@ const Body = () => (
         <EntrySubtitle>
           Department of Physics, HKUST
         </EntrySubtitle>
-        <EntryTime>2023 Fall</EntryTime>
+        <EntryTime>2023-24 Fall</EntryTime>
       </Entry>
       <Entry>
         <EntryTitle>
@@ -297,7 +297,7 @@ const Body = () => (
         <EntrySubtitle>
           Department of Computer Science and Engineering, HKUST
         </EntrySubtitle>
-        <EntryTime>2023 Fall, 2024 Spring</EntryTime>
+        <EntryTime>2023-24 Fall, Spring</EntryTime>
       </Entry>
       <Entry>
         <EntryTitle>
@@ -306,7 +306,7 @@ const Body = () => (
         <EntrySubtitle>
           Department of Computer Science and Engineering, HKUST
         </EntrySubtitle>
-        <EntryTime>2023 Fall, 2024 Spring</EntryTime>
+        <EntryTime>2023-24 Fall, Spring</EntryTime>
       </Entry>
       <Entry>
         <EntryTitle>
@@ -315,7 +315,7 @@ const Body = () => (
         <EntrySubtitle>
           ...
         </EntrySubtitle>
-        <EntryTime>...</EntryTime>
+        <EntryTime>Anytime</EntryTime>
       </Entry>
     </Section>
 
