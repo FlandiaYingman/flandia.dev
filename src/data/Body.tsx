@@ -60,7 +60,7 @@ const Body = () => (
             <SubEntryBadges>
               <LightBadge>A+</LightBadge>
               <LightBadge>
-                MT: 100/100 1<sup>nd</sup>
+                MT: 100/100 1<sup>st</sup>
               </LightBadge>
               <LightBadge>F: 97/100</LightBadge>
             </SubEntryBadges>
