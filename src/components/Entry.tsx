@@ -6,6 +6,12 @@ import { Card, CardContent, CardHeader } from "@/components/ui/Card";
 import { Badges } from "@/components/ui/Badge";
 import { ChevronsDownUp, ChevronsUpDown } from "lucide-react";
 import { Collapsible, CollapsibleContent } from "@/components/ui/collapsible";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 export const EntryTitle = createSlot();
 export const EntrySubtitle = createSlot();
@@ -13,6 +19,7 @@ export const EntryTime = createSlot();
 export const EntryBadges = createSlot();
 export const EntryDescription = createSlot();
 export const EntryDetails = createSlot();
+export const EntryDetailsTooltip = createSlot();
 
 export const Entry = ({ children }: PropsWithChildren) => {
   const [collapseOpen, setCollapseOpen] = React.useState(false);
@@ -23,6 +30,7 @@ export const Entry = ({ children }: PropsWithChildren) => {
     const badges = Slots.getProps(EntryBadges);
     const description = Slots.getProps(EntryDescription);
     const details = Slots.getProps(EntryDetails);
+    const detailsTooltip = Slots.getProps(EntryDetailsTooltip);
 
     return (
       <Card>
@@ -47,11 +55,18 @@ export const Entry = ({ children }: PropsWithChildren) => {
                 setCollapseOpen(!collapseOpen);
               }}
             >
-              {collapseOpen ? (
-                <ChevronsDownUp className="h-4 w-4" />
-              ) : (
-                <ChevronsUpDown className="h-4 w-4" />
-              )}
+              <TooltipProvider delayDuration={300}>
+                <Tooltip>
+                  <TooltipTrigger>
+                    {collapseOpen ? (
+                      <ChevronsDownUp className="h-4 w-4" />
+                    ) : (
+                      <ChevronsUpDown className="h-4 w-4" />
+                    )}
+                  </TooltipTrigger>
+                  <TooltipContent {...detailsTooltip} />
+                </Tooltip>
+              </TooltipProvider>
             </div>
             <Collapsible open={collapseOpen}>
               <CollapsibleContent>

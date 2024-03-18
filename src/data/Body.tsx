@@ -5,6 +5,7 @@ import {
   EntryBadges,
   EntryDescription,
   EntryDetails,
+  EntryDetailsTooltip,
   EntrySubtitle,
   EntryTime,
   EntryTitle
@@ -89,6 +90,7 @@ const Body = () => (
             </SubEntryDescription>
           </SubEntry>
         </EntryDetails>
+        <EntryDetailsTooltip>Showoff!</EntryDetailsTooltip>
       </Entry>
     </Section>
     <Section>
