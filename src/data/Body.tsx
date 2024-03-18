@@ -89,6 +89,19 @@ const Body = () => (
               {COMP2211_NOTES("my notes")}.
             </SubEntryDescription>
           </SubEntry>
+          <SubEntry>
+            <SubEntryTitle>COMP 2012 OOP and Data Structures</SubEntryTitle>
+            <SubEntryTime>2023-24 Spring</SubEntryTime>
+            <SubEntryBadges>
+              <LightBadge>
+                MT: 90/100 1<sup>st</sup>
+              </LightBadge>
+            </SubEntryBadges>
+            <SubEntryDescription>
+              I am currently taking this course and am looking forward to
+              learning more about OOP and Data Structures.
+            </SubEntryDescription>
+          </SubEntry>
         </EntryDetails>
         <EntryDetailsTooltip>Showoff!</EntryDetailsTooltip>
       </Entry>
