@@ -102,6 +102,19 @@ const Body = () => (
               learning more about OOP and Data Structures.
             </SubEntryDescription>
           </SubEntry>
+          <SubEntry>
+            <SubEntryTitle>COMP 2611 Computer Organization</SubEntryTitle>
+            <SubEntryTime>2023-24 Spring</SubEntryTime>
+            <SubEntryBadges>
+              <LightBadge>
+                MT: 100/100 1<sup>st</sup>
+              </LightBadge>
+            </SubEntryBadges>
+            <SubEntryDescription>
+              I am currently taking this course and am looking forward to
+              learning more about Computer Organization.
+            </SubEntryDescription>
+          </SubEntry>
         </EntryDetails>
         <EntryDetailsTooltip>Showoff!</EntryDetailsTooltip>
       </Entry>
