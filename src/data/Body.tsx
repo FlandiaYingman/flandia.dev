@@ -307,46 +307,33 @@ const Body = () => (
         </Project>
       </ProjectCards>
     </Section>
-    <Section>
+    <Section hiddenPrint>
       <SectionTitle>Gratitude to Educators</SectionTitle>
       <Entry>
-        <EntryTitle>
-          Dr. ALTMAN, Micheal Scott
-        </EntryTitle>
-        <EntrySubtitle>
-          Department of Physics, HKUST
-        </EntrySubtitle>
+        <EntryTitle>Dr. ALTMAN, Micheal Scott</EntryTitle>
+        <EntrySubtitle>Department of Physics, HKUST</EntrySubtitle>
         <EntryTime>2023-24 Fall</EntryTime>
       </Entry>
       <Entry>
-        <EntryTitle>
-          Dr. LI, Xin Cindy
-        </EntryTitle>
+        <EntryTitle>Dr. LI, Xin Cindy</EntryTitle>
         <EntrySubtitle>
           Department of Computer Science and Engineering, HKUST
         </EntrySubtitle>
         <EntryTime>2023-24 Fall, Spring</EntryTime>
       </Entry>
       <Entry>
-        <EntryTitle>
-          Dr TSOI, Yau Chat Desmond
-        </EntryTitle>
+        <EntryTitle>Dr TSOI, Yau Chat Desmond</EntryTitle>
         <EntrySubtitle>
           Department of Computer Science and Engineering, HKUST
         </EntrySubtitle>
         <EntryTime>2023-24 Fall, Spring</EntryTime>
       </Entry>
       <Entry>
-        <EntryTitle>
-          Ms. WANG, Hannah
-        </EntryTitle>
-        <EntrySubtitle>
-          ...
-        </EntrySubtitle>
+        <EntryTitle>Ms. WANG, Hannah</EntryTitle>
+        <EntrySubtitle>...</EntrySubtitle>
         <EntryTime>Anytime</EntryTime>
       </Entry>
     </Section>
-
   </>
 );
 
