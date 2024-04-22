@@ -85,7 +85,7 @@ const Head = () => (
       <Social
         url="tel:+852-8403-0974"
         icon={<PhoneIcon />}
-        label="+852-8403-0974"
+        label="+852 8403 0974"
       />
       <Social
         url="https://github.com/FlandiaYingman"
