@@ -10,6 +10,7 @@ import {
 import { Badge } from "./ui/Badge";
 import React, { PropsWithChildren } from "react";
 import { createHost, createSlot } from "create-slots";
+import { twMerge } from "tailwind-merge";
 
 type Status = "online" | "wip";
 
@@ -30,11 +31,13 @@ export const ProjectLabel = createSlot("span");
 interface Props {
   status?: Status;
   href: string;
+  hiddenPrint?: boolean;
 }
 
 export function Project({
   children,
   status = "online",
+  hiddenPrint = false,
   href,
 }: PropsWithChildren<Props>) {
   const color = statusColor(status);
@@ -44,7 +47,10 @@ export function Project({
     const badgesProps = Slots.getProps(ProjectBadges);
     const labelProps = Slots.getProps(ProjectLabel);
     return (
-      <Card className="flex flex-col overflow-hidden border border-muted p-3">
+      <Card className={twMerge(
+        "flex flex-col overflow-hidden border border-muted p-3",
+        hiddenPrint && "print:hidden"
+      )}>
         <CardHeader className="">
           <div className="space-y-1">
             <CardTitle className="text-base">

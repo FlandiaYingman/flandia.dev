@@ -252,7 +252,7 @@ const Body = () => (
           </ProjectBadges>
           <ProjectLabel>arkwaifu.cc</ProjectLabel>
         </Project>
-        <Project href="https://ust-rankings.com">
+        <Project href="https://ust-rankings.com" hiddenPrint>
           <ProjectTitle>UST Rankings</ProjectTitle>
           <ProjectDescription>
             UST Rankings provides a basic rankings for instructors at HKUST,
