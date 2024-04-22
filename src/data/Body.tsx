@@ -8,7 +8,7 @@ import {
   EntryDetailsTooltip,
   EntrySubtitle,
   EntryTime,
-  EntryTitle
+  EntryTitle,
 } from "@/components/Entry";
 import { Badges, DarkBadge, LightBadge } from "@/components/ui/Badge";
 import {
@@ -17,10 +17,16 @@ import {
   ProjectCards,
   ProjectDescription,
   ProjectLabel,
-  ProjectTitle
+  ProjectTitle,
 } from "@/components/Project";
 import React from "react";
-import { SubEntry, SubEntryBadges, SubEntryDescription, SubEntryTime, SubEntryTitle } from "@/components/sub-entry";
+import {
+  SubEntry,
+  SubEntryBadges,
+  SubEntryDescription,
+  SubEntryTime,
+  SubEntryTitle,
+} from "@/components/sub-entry";
 
 function a(href: string) {
   // eslint-disable-next-line react/display-name
@@ -161,9 +167,10 @@ const Body = () => (
           <LightBadge>UGTA</LightBadge>
         </EntryBadges>
         <EntryDescription>
-          After taking the course COMP 2011 (Programming with C++) at HKUST in
-          Fall 2023, an instructor invited me to become a UGTA. I accepted the
-          offer and will serve as a UGTA for this course in the semester.
+          Having taken the course COMP 2011 (Programming with C++) in Fall 2023,
+          I was invited by Dr. Cindy Li to become a UGTA. This semester, I serve
+          as a rare freshman UGTA for COMP 2011 with Prof. Brian Mak as the
+          course coordinator.
         </EntryDescription>
       </Entry>
       <Entry>
