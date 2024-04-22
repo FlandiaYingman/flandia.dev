@@ -7,7 +7,6 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/Card";
-import { Badge } from "./ui/Badge";
 import React, { PropsWithChildren } from "react";
 import { createHost, createSlot } from "create-slots";
 import { twMerge } from "tailwind-merge";
@@ -47,10 +46,12 @@ export function Project({
     const badgesProps = Slots.getProps(ProjectBadges);
     const labelProps = Slots.getProps(ProjectLabel);
     return (
-      <Card className={twMerge(
-        "flex flex-col overflow-hidden border border-muted p-3",
-        hiddenPrint && "print:hidden"
-      )}>
+      <Card
+        className={twMerge(
+          "flex flex-col overflow-hidden border border-muted p-3",
+          hiddenPrint && "print:hidden",
+        )}
+      >
         <CardHeader className="">
           <div className="space-y-1">
             <CardTitle className="text-base">
