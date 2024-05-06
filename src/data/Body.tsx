@@ -175,10 +175,10 @@ const Body = () => (
       </Entry>
       <Entry>
         <EntryTitle>USThing</EntryTitle>
-        <EntrySubtitle>Backend Developer</EntrySubtitle>
+        <EntrySubtitle>Head of Backend</EntrySubtitle>
         <EntryTime>2023-24 Fall - Now</EntryTime>
         <EntryBadges>
-          <LightBadge>Volunteer</LightBadge>
+          <LightBadge>Core Member</LightBadge>
         </EntryBadges>
         <EntryDescription>
           USThing is a student-developed all-in-one app for HKUST. The team
