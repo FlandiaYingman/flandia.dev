@@ -8,7 +8,7 @@ import {
   EntryDetailsTooltip,
   EntrySubtitle,
   EntryTime,
-  EntryTitle,
+  EntryTitle
 } from "@/components/Entry";
 import { Badges, DarkBadge, LightBadge } from "@/components/ui/Badge";
 import {
@@ -17,16 +17,10 @@ import {
   ProjectCards,
   ProjectDescription,
   ProjectLabel,
-  ProjectTitle,
+  ProjectTitle
 } from "@/components/Project";
 import React from "react";
-import {
-  SubEntry,
-  SubEntryBadges,
-  SubEntryDescription,
-  SubEntryTime,
-  SubEntryTitle,
-} from "@/components/sub-entry";
+import { SubEntry, SubEntryBadges, SubEntryDescription, SubEntryTime, SubEntryTitle } from "@/components/sub-entry";
 
 function a(href: string) {
   // eslint-disable-next-line react/display-name
@@ -192,6 +186,24 @@ const Body = () => (
           USThing is a student-developed all-in-one app for HKUST. The team
           consists of passionate and talented students who work towards
           continually improving the app and the HKUST student community.
+          <ul>
+            <li>
+              Leading the backend team in refactoring the backend server
+              architecture into a containerized microservice architecture, in
+              order to improve performance and maintainability.
+            </li>
+            <li>
+              Leading the app team in revamping our old apps, migrating them
+              from old native apps for Android and iOS, respectively, into one
+              app built with React Native technology.
+            </li>
+            <li>
+              Leading the team in refactoring the CI/CD workflow of the
+              development process of both the backend team and the app team,
+              automatizing, simplifying and improving the efficiency of the
+              integration and deployment / release process.
+            </li>
+          </ul>
         </EntryDescription>
       </Entry>
       <Entry>

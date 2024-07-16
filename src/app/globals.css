@@ -101,3 +101,7 @@
 ul {
   @apply list-inside list-disc;
 }
+
+li + li {
+  @apply mt-1;
+}
