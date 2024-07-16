@@ -161,16 +161,19 @@ const Body = () => (
       <SectionTitle>Work Experience</SectionTitle>
       <Entry>
         <EntryTitle>CSE, HKUST</EntryTitle>
-        <EntrySubtitle>Undergraduate Teaching Assistant</EntrySubtitle>
+        <EntrySubtitle>
+          Undergraduate Teaching Assistant for COMP 2011
+        </EntrySubtitle>
         <EntryTime>2023-24 Spring</EntryTime>
         <EntryBadges>
           <LightBadge>UGTA</LightBadge>
+          <LightBadge>COMP 2011</LightBadge>
         </EntryBadges>
         <EntryDescription>
-          Having taken the course COMP 2011 (Programming with C++) in Fall 2023,
-          I was invited by Dr. Cindy Li to become a UGTA. This semester, I serve
-          as a rare freshman UGTA for COMP 2011 with Prof. Brian Mak as the
-          course coordinator.
+          Having taken the course and performing extremely well in COMP 2011
+          (Programming with C++), I was invited by Dr. Cindy Li to become a
+          UGTA. In the next term, I served as a rare freshman UGTA for COMP 2011
+          with Prof. Brian Mak as the course coordinator.
         </EntryDescription>
       </Entry>
       <Entry>
@@ -184,6 +187,23 @@ const Body = () => (
           USThing is a student-developed all-in-one app for HKUST. The team
           consists of passionate and talented students who work towards
           continually improving the app and the HKUST student community.
+        </EntryDescription>
+      </Entry>
+      <Entry>
+        <EntryTitle>CSE, HKUST</EntryTitle>
+        <EntrySubtitle>UGTA for COMP 1023</EntrySubtitle>
+        <EntryTime>2023-24 Summer</EntryTime>
+        <EntryBadges>
+          <LightBadge>UGTA</LightBadge>
+          <LightBadge>COMP 1023</LightBadge>
+        </EntryBadges>
+        <EntryDescription>
+          After performing outstandingly in COMP 2211 (Exploring Artificial
+          Intelligence) and COMP 2012 (Object-Oriented Programming and Data
+          Structures), Dr. Desmond Tsoi, the instructor of COMP 2211 and 2012,
+          invited me to become a UGTA for his new course, COMP 1023
+          (Introduction to Python Programming), helping with designing and
+          preparing the course.
         </EntryDescription>
       </Entry>
     </Section>
