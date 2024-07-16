@@ -27,7 +27,7 @@ export function SectionTitle(props: PropsWithChildren<{}>) {
 export function SectionText(props: PropsWithChildren<{}>) {
   return (
     <p
-      className="text-pretty font-mono text-sm text-muted-foreground"
+      className="text-pretty font-mono text-sm"
       {...props}
     />
   );

@@ -68,10 +68,11 @@ const Head = () => (
   <>
     <Name>LI, Yu Hong Harry</Name>
     <About>
-      Enthusiastic software developer with experience in developing and
-      maintaining apps, websites and server software.
-      <br />
-      <i>Work hard. Play hard. </i>
+      Enthusiastic learner and developer, passionate about learning new
+      technologies, practices and methodologies through intuition and hands-on
+      experience.
+      <blockquote>Work hard. Play hard.</blockquote>
+      <blockquote>Humans pursue knowledge not to surpass others.</blockquote>
     </About>
     <Location href="https://maps.app.goo.gl/YZuY7rM4Mf9mvP9i8">
       HKUST, Hong Kong SAR

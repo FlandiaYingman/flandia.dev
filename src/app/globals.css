@@ -98,6 +98,23 @@
   }
 }
 
+q, blockquote {
+  @apply italic
+}
+
+blockquote::before {
+  content: open-quote;
+}
+
+blockquote::after {
+  content: close-quote;
+}
+
+q::before, q::after, blockquote::before, blockquote::after {
+  @apply not-italic
+}
+
+
 ul {
   @apply list-inside list-disc;
 }

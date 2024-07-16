@@ -38,8 +38,9 @@ const Body = () => (
     <Section>
       <SectionTitle>About</SectionTitle>
       <SectionText>
-        I am highly interested in Computer Science and passionate about learning
-        new technologies through hands-on experience. I am also an excellent
+        I am highly interested in Computer Science about learning new theories
+        and technologies, and I am methodically experienced in developing and
+        maintaining apps, websites and server software. I am also an excellent
         team player with a strong ability to share knowledge and collaborate
         with others.
       </SectionText>
