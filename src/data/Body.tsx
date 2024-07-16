@@ -156,6 +156,13 @@ const Body = () => (
         </EntrySubtitle>
         <EntryTime>2023-24 Fall</EntryTime>
       </Entry>
+      <Entry>
+        <EntryTitle>Best UGTA Award-Honorable Mention</EntryTitle>
+        <EntrySubtitle>
+          Department of Computer Science and Engineering, HKUST
+        </EntrySubtitle>
+        <EntryTime>2023-24</EntryTime>
+      </Entry>
     </Section>
     <Section>
       <SectionTitle>Work Experience</SectionTitle>
