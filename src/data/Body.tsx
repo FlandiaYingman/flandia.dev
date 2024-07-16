@@ -151,9 +151,7 @@ const Body = () => (
       </Entry>
       <Entry>
         <EntryTitle>Dean's List</EntryTitle>
-        <EntrySubtitle>
-          Hong Kong University of Science and Technology
-        </EntrySubtitle>
+        <EntrySubtitle>School of Engineering, HKUST</EntrySubtitle>
         <EntryTime>2023-24 Fall</EntryTime>
       </Entry>
       <Entry>
