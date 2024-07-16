@@ -50,8 +50,8 @@ const Body = () => (
       <Entry>
         <EntryTitle>Hong Kong University of Science and Technology</EntryTitle>
         <EntrySubtitle>
-          Bachelor of Engineering with an Extended Major in AI (Discipline
-          Undeclared)
+          Bachelor of Engineering in Computer Science with an Extended Major in
+          Artificial Intelligence
         </EntrySubtitle>
         <EntryTime>2023 - 2027 (Pursuing)</EntryTime>
         <EntryDetails>
