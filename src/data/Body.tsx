@@ -195,6 +195,22 @@ const Body = () => (
         </EntryDescription>
       </Entry>
       <Entry>
+        <EntryTitle>GREAT Smart Cities Institute, HKUST</EntryTitle>
+        <EntrySubtitle>Summer Internship</EntrySubtitle>
+        <EntryTime>2023-24 Summer</EntryTime>
+        <EntryBadges>
+          <LightBadge>Part Time</LightBadge>
+        </EntryBadges>
+        <EntryDescription>
+          I developed and implemented an automated software solution utilizing
+          computer vision technology to efficiently process and analyze traffic
+          data, and integrated it with GIS software to enhance data
+          visualization and spatial analysis capabilities. Additionally, I
+          streamlined workflows to improve the accuracy and speed of traffic
+          data processing.
+        </EntryDescription>
+      </Entry>
+      <Entry>
         <EntryTitle>CSE, HKUST</EntryTitle>
         <EntrySubtitle>UGTA for COMP 1023</EntrySubtitle>
         <EntryTime>2023-24 Summer</EntryTime>
