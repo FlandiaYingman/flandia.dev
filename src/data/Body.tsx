@@ -178,7 +178,7 @@ const Body = () => (
       </Entry>
       <Entry>
         <EntryTitle>USThing</EntryTitle>
-        <EntrySubtitle>Head of Backend</EntrySubtitle>
+        <EntrySubtitle>Head of Backend & App Team Leader</EntrySubtitle>
         <EntryTime>2023-24 Fall - Now</EntryTime>
         <EntryBadges>
           <LightBadge>Core Member</LightBadge>
