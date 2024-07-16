@@ -81,8 +81,17 @@
 }
 
 @media print {
-  body {
-    zoom: 75%;
+  @page {
+    size: A4;
+    margin: 1in;
+  }
+
+  html {
+    font-size: 9pt;
+  }
+
+  main {
+    padding: 0 !important;
   }
 }
 
