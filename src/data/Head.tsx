@@ -1,7 +1,11 @@
 import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
-import { GitHubIcon } from "@/components/icons";
-import React, { cloneElement, PropsWithChildren, ReactElement } from "react";
+import React, { createElement, FC, PropsWithChildren } from "react";
 import { Button } from "@/components/ui/Button";
+import {
+  SiGithub,
+  SiInstagram,
+  SiThreads,
+} from "@icons-pack/react-simple-icons";
 
 const Name = ({ children }: PropsWithChildren) => (
   <h1 className="text-2xl font-bold">{children}</h1>
@@ -26,18 +30,22 @@ const Location = ({ href, children }: PropsWithChildren<{ href: string }>) => (
   </p>
 );
 
-const Social = ({
-  url,
-  icon,
-  label,
-  labelPrefix = "",
-}: {
+type SocialProps = {
   url: string;
-  icon: ReactElement;
-  label: string;
-  labelPrefix?: string;
-}) => {
-  icon = cloneElement(icon, { className: "h-4 w-4" });
+  icon: FC<{ className?: string }>;
+} & (
+  | {
+      label: string;
+      labelPrefix?: string;
+      printHidden?: false;
+    }
+  | {
+      printHidden: true;
+    }
+);
+
+const Social = (props: SocialProps) => {
+  const { url, icon } = props;
   return (
     <>
       <Button
@@ -47,13 +55,15 @@ const Social = ({
         asChild
       >
         <a href={url} target="_blank">
-          {icon}
+          {createElement(icon, { className: "h-4 w-4" })}
         </a>
       </Button>
-      <span className="hidden basis-full print:block">
-        {labelPrefix}
-        <span className="underline">{label}</span>
-      </span>
+      {props.printHidden || (
+        <span className="hidden basis-full print:block">
+          {props.labelPrefix}
+          <span className="underline">{props.label}</span>
+        </span>
+      )}
     </>
   );
 };
@@ -80,19 +90,30 @@ const Head = () => (
     <Socials>
       <Social
         url={"mailto:me@flandia.dev"}
-        icon={<MailIcon />}
+        icon={MailIcon}
         label="me@flandia.dev"
       />
       <Social
         url="tel:+852-8403-0974"
-        icon={<PhoneIcon />}
+        icon={PhoneIcon}
         label="+852 8403 0974"
+        labelPrefix="TEL: "
       />
       <Social
         url="https://github.com/FlandiaYingman"
-        icon={<GitHubIcon />}
+        icon={SiGithub}
         label="@FlandiaYingman"
         labelPrefix="GitHub: "
+      />
+      <Social
+        url={"https://www.instagram.com/flandia_dev/"}
+        icon={SiInstagram}
+        printHidden
+      />
+      <Social
+        url={"https://www.threads.net/@flandia_dev/"}
+        icon={SiThreads}
+        printHidden
       />
     </Socials>
   </>
