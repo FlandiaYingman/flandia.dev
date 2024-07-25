@@ -45,7 +45,10 @@ export const Entry = ({ children }: PropsWithChildren) => {
           <h4 className="font-mono text-sm leading-none" {...subtitle} />
         </CardHeader>
         {description && (
-          <CardContent className="mt-2 text-xs flex flex-col gap-y-2" {...description} />
+          <CardContent
+            className="mt-2 flex flex-col gap-y-2 text-xs"
+            {...description}
+          />
         )}
         {details && (
           <>
@@ -69,7 +72,7 @@ export const Entry = ({ children }: PropsWithChildren) => {
               </TooltipProvider>
             </div>
             <Collapsible open={collapseOpen}>
-              <CollapsibleContent>
+              <CollapsibleContent className="data-[state=closed]:animate-collapsible-up data-[state=open]:animate-collapsible-down overflow-hidden">
                 <CardContent className="mt-2 space-y-2 text-sm" {...details} />
               </CollapsibleContent>
             </Collapsible>
