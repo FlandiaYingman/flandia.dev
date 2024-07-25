@@ -8,9 +8,9 @@ const Name = ({ children }: PropsWithChildren) => (
 );
 
 const About = ({ children }: PropsWithChildren) => (
-  <p className="max-w-xl text-pretty font-mono text-sm text-muted-foreground">
+  <div className="max-w-xl text-pretty font-mono text-sm text-muted-foreground">
     {children}
-  </p>
+  </div>
 );
 
 const Location = ({ href, children }: PropsWithChildren<{ href: string }>) => (
