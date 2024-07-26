@@ -558,23 +558,6 @@ const Body = () => (
           </ProjectBadges>
           <ProjectLabel>arkwaifu.cc</ProjectLabel>
         </Project>
-        <Project href="https://ust-rankings.com" hiddenPrint>
-          <ProjectTitle>UST Rankings</ProjectTitle>
-          <ProjectDescription>
-            UST Rankings provides a basic rankings for instructors at HKUST,
-            based on their teaching performance... and more!
-          </ProjectDescription>
-          <ProjectBadges>
-            <LightBadge>Contributor</LightBadge>
-            <LightBadge>Beta Phase</LightBadge>
-            <LightBadge>Next.js</LightBadge>
-            <LightBadge>React</LightBadge>
-            <LightBadge>Vercel</LightBadge>
-            <LightBadge>shadcn/ui</LightBadge>
-            <LightBadge>Tailwind CSS</LightBadge>
-          </ProjectBadges>
-          <ProjectLabel>ust-rankings.com</ProjectLabel>
-        </Project>
         <Project href="https://flandia.dev">
           <ProjectTitle>the Home Page</ProjectTitle>
           <ProjectDescription>
