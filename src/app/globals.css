@@ -138,3 +138,11 @@ ul {
 li + li {
   @apply mt-1;
 }
+
+caption {
+  @apply font-bold underline;
+}
+
+th, td {
+  @apply px-2 py-1 text-left;
+}

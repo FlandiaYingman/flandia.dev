@@ -8,7 +8,7 @@ import {
   EntryDetailsTooltip,
   EntrySubtitle,
   EntryTime,
-  EntryTitle
+  EntryTitle,
 } from "@/components/Entry";
 import { Badges, DarkBadge, LightBadge } from "@/components/ui/Badge";
 import {
@@ -17,10 +17,17 @@ import {
   ProjectCards,
   ProjectDescription,
   ProjectLabel,
-  ProjectTitle
+  ProjectTitle,
 } from "@/components/Project";
 import React from "react";
-import { SubEntry, SubEntryBadges, SubEntryDescription, SubEntryTime, SubEntryTitle } from "@/components/sub-entry";
+import {
+  SubEntry,
+  SubEntryBadges,
+  SubEntryDescription,
+  SubEntryTime,
+  SubEntryTitle,
+} from "@/components/sub-entry";
+import { toTable } from "@/utils/table";
 
 function a(href: string) {
   // eslint-disable-next-line react/display-name
@@ -60,60 +67,298 @@ const Body = () => (
             <SubEntryTime>2023-24 Fall</SubEntryTime>
             <SubEntryBadges>
               <LightBadge>A+</LightBadge>
-              <LightBadge>
-                MT: 100/100 1<sup>st</sup>
-              </LightBadge>
-              <LightBadge>F: 97/100</LightBadge>
             </SubEntryBadges>
             <SubEntryDescription>
-              Currently, I am serving as an Undergraduate Teaching Assistant
-              (UGTA) for this course, dedicating my efforts to assisting fellow
-              students, following the example set by those who previously helped
-              me.
+              <p>
+                COMP 2011 is a good but challenging course teaching basic
+                knowledge of C++ programming. Students without prior programming
+                experience (or only with minimal experience, like COMP 1021) may
+                find it difficult to catch up with the course. The key to this
+                course is to understand all concepts and ask the instructor team
+                questions on Piazza when needed.
+              </p>
+              <p>
+                With a passing result of the C-Placement Test, I was exempted
+                from taking the pre-requisite course COMP 1021, and was able to
+                directly enroll in COMP 2011 as a freshman. I performed
+                extremely well in the course, with full marks in the midterm and
+                eventually an A+ grade. After the final exam, I was invited by
+                the instructor, Dr. Cindy Li, to become a UGTA for the course in
+                the next semester.
+              </p>
+              {toTable(
+                [
+                  "_",
+                  "Score",
+                  "Z-Score",
+                  "Low",
+                  "LQ",
+                  "Mean",
+                  "Mean*",
+                  "Median",
+                  "Median*",
+                  "UQ",
+                  "High",
+                  "SD*",
+                ],
+                [
+                  {
+                    _: "Midterm",
+                    Score: 100,
+                    "Z-Score": (100 - 61.18) / 20.31,
+                    Low: 0,
+                    LQ: 48.69,
+                    Mean: 61.23,
+                    Median: 62.13,
+                    UQ: 76.5,
+                    High: 100,
+                    "Mean*": 61.18,
+                    "Median*": 61.75,
+                    "SD*": 20.31,
+                  },
+                  {
+                    _: "Final",
+                    Score: 97,
+                    "Z-Score": (97 - 54.51) / 22.32,
+                    Low: 0,
+                    LQ: 37.75,
+                    Mean: 53.21,
+                    Median: 54,
+                    UQ: 72.25,
+                    High: 98.5,
+                    "Mean*": 54.51,
+                    "Median*": 54.63,
+                    "SD*": 22.32,
+                  },
+                ],
+                "Stats (*: Released by Instructor Team)",
+              )}
             </SubEntryDescription>
           </SubEntry>
           <SubEntry>
-            <SubEntryTitle>COMP 2211 Exploring AI</SubEntryTitle>
+            <SubEntryTitle>
+              COMP 2211 Exploring Artificial Intelligence
+            </SubEntryTitle>
             <SubEntryTime>2023-24 Fall</SubEntryTime>
             <SubEntryBadges>
               <LightBadge>A+</LightBadge>
-              <LightBadge>
-                MT: 91/100 2<sup>nd</sup>
-              </LightBadge>
-              <LightBadge>
-                F: 91.4/100 1<sup>st</sup>
-              </LightBadge>
             </SubEntryBadges>
             <SubEntryDescription>
-              I plan to serve as a UGTA for this course in the next semester. If
-              you want to know more about this course, you can refer to{" "}
-              {COMP2211_NOTES("my notes")}.
+              <p>
+                COMP 2211 is a course that introduces the basic concepts of
+                Artificial Intelligence. It is a great beginner course for
+                computer science students, with good grading, a reasonable
+                workload, and one of the best instructors in the department.
+              </p>
+              <p>
+                I performed extremely well in the course, with the 2nd ranking
+                in midterm, 1st in the final and eventually an A+ grade.
+              </p>
+              {toTable(
+                [
+                  "_",
+                  "Score",
+                  "Z-Score",
+                  "Low",
+                  "LQ",
+                  "Mean",
+                  "Mean*",
+                  "Median",
+                  "Median*",
+                  "UQ",
+                  "High",
+                  "SD*",
+                ],
+                [
+                  {
+                    _: "Midterm",
+                    Score: 91,
+                    "Z-Score": (91 - 60.19) / 14.89,
+                    Low: 0,
+                    LQ: 52,
+                    Mean: 58.48,
+                    Median: 60.63,
+                    UQ: 70.5,
+                    High: 96,
+                    "Mean*": 60.19,
+                    "Median*": 61.0,
+                    "SD*": 14.89,
+                  },
+                  {
+                    _: "Final",
+                    Score: 91.4,
+                    "Z-Score": (91.4 - 52.5) / 15.86,
+                    Low: 0,
+                    LQ: 43.41,
+                    Mean: 51.59,
+                    Median: 53.2,
+                    UQ: 63.71,
+                    High: 91.4,
+                    "Mean*": 52.5,
+                    "Median*": 53.4,
+                    "SD*": 15.86,
+                  },
+                ],
+                "Stats (*: Released by Instructor Team)",
+              )}
             </SubEntryDescription>
           </SubEntry>
           <SubEntry>
-            <SubEntryTitle>COMP 2012 OOP and Data Structures</SubEntryTitle>
+            <SubEntryTitle>
+              COMP 2012 Object-Oriented Programming and Data Structures
+            </SubEntryTitle>
             <SubEntryTime>2023-24 Spring</SubEntryTime>
             <SubEntryBadges>
-              <LightBadge>
-                MT: 90/100 1<sup>st</sup>
-              </LightBadge>
+              <LightBadge>A+</LightBadge>
             </SubEntryBadges>
             <SubEntryDescription>
-              I am currently taking this course and am looking forward to
-              learning more about OOP and Data Structures.
+              <p>
+                COMP 2012 is the continuation of COMP 2011, teaching advanced
+                C++ with object-oriented programming and some basic data
+                structures. This course is even more challenging than COMP 2011,
+                with a heavier workload and more difficult concepts.
+              </p>
+              <p>
+                I performed extremely well in the course, with the{" "}
+                <del>1st (before paper-checking)</del>
+                2nd ranking in the midterm and eventually an A+ grade.
+              </p>
+              {toTable(
+                [
+                  "_",
+                  "Score",
+                  "Z-Score",
+                  "Low",
+                  "LQ",
+                  "Mean",
+                  "Mean*",
+                  "Median",
+                  "Median*",
+                  "UQ",
+                  "High",
+                  "SD*",
+                ],
+                [
+                  {
+                    _: "Midterm",
+                    Score: 90,
+                    "Z-Score": (90 - 45.04) / 15.12,
+                    Low: 0,
+                    LQ: 34.9,
+                    Mean: 45.69,
+                    Median: 45.7,
+                    UQ: 55.75,
+                    High: 91,
+                    "Mean*": 45.04,
+                    "Median*": 45.0,
+                    "SD*": 15.12,
+                  },
+                  {
+                    _: "Final",
+                    Score: 91.75,
+                    "Z-Score": (91.75 - 54.62) / 16.47,
+                    Low: 0,
+                    LQ: 43.38,
+                    Mean: 54.68,
+                    Median: 55.5,
+                    UQ: 67.63,
+                    High: 95,
+                    "Mean*": 54.62,
+                    "Median*": 55.25,
+                    "SD*": 16.47,
+                  },
+                  {
+                    _: "Total",
+                    Score: 94.1,
+                    Low: 0,
+                    LQ: 54.8,
+                    Mean: 63.41,
+                    Median: 65.59,
+                    UQ: 73.9,
+                    High: 95.56,
+                  },
+                ],
+                "Stats (*: Released by Instructor Team)",
+              )}
             </SubEntryDescription>
           </SubEntry>
           <SubEntry>
             <SubEntryTitle>COMP 2611 Computer Organization</SubEntryTitle>
             <SubEntryTime>2023-24 Spring</SubEntryTime>
             <SubEntryBadges>
-              <LightBadge>
-                MT: 100/100 1<sup>st</sup>
-              </LightBadge>
+              <LightBadge>A+</LightBadge>
             </SubEntryBadges>
             <SubEntryDescription>
-              I am currently taking this course and am looking forward to
-              learning more about Computer Organization.
+              <p>
+                COMP 2611 is a course that teaches the basic concepts of
+                computer organization, including the structure of a computer,
+                assembly language, and some basic knowledge of computer
+                processor. This is another good course for computer science
+                students, with a reasonable workload, good grading and one of
+                the best instructors in the department.
+              </p>
+              <p>
+                I performed extremely well in the course, with full marks in the
+                midterm, 1st in the overall score, and eventually an A+ grade.
+                After the final exam, I was invited by the instructor, Dr.
+                Desmond Tsoi, to become a UGTA for the course in the next
+                semester.
+              </p>
+              {toTable(
+                [
+                  "_",
+                  "Score",
+                  "Z-Score",
+                  "Low",
+                  "LQ",
+                  "Mean",
+                  "Mean*",
+                  "Median",
+                  "Median*",
+                  "UQ",
+                  "High",
+                  "SD*",
+                ],
+                [
+                  {
+                    _: "Midterm",
+                    Score: 100,
+                    "Z-Score": (100 - 73.5) / 14.8,
+                    Low: 17,
+                    LQ: 66,
+                    Mean: 74.58,
+                    Median: 76,
+                    UQ: 86,
+                    High: 100,
+                    "Mean*": 73.5,
+                    "SD*": 14.8,
+                  },
+                  {
+                    _: "Final",
+                    Score: 99,
+                    "Z-Score": (99 - 66.62) / 18.75,
+                    Low: 19.5,
+                    LQ: 53.25,
+                    Mean: 66.67,
+                    Median: 69.5,
+                    UQ: 81,
+                    High: 100,
+                    "Mean*": 66.62,
+                    "SD*": 18.75,
+                  },
+                  {
+                    _: "Total",
+                    Score: 99.6,
+                    Low: 26.35,
+                    LQ: 69.45,
+                    Mean: 76.05,
+                    Median: 79.54,
+                    UQ: 85.85,
+                    High: 99.6,
+                  },
+                ],
+                "Stats (*: Released by Instructor Team)",
+              )}
             </SubEntryDescription>
           </SubEntry>
         </EntryDetails>
