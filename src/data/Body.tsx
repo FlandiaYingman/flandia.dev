@@ -405,7 +405,7 @@ const Body = () => (
     <Section>
       <SectionTitle>Work Experience</SectionTitle>
       <Entry>
-        <EntryTitle>CSE, HKUST</EntryTitle>
+        <EntryTitle>Department of Computer Science, HKUST</EntryTitle>
         <EntrySubtitle>
           Undergraduate Teaching Assistant for COMP 2011
         </EntrySubtitle>
@@ -469,8 +469,8 @@ const Body = () => (
         </EntryDescription>
       </Entry>
       <Entry>
-        <EntryTitle>CSE, HKUST</EntryTitle>
-        <EntrySubtitle>UGTA for COMP 1023</EntrySubtitle>
+        <EntryTitle>Department of Computer Science, HKUST</EntryTitle>
+        <EntrySubtitle>Undergraduate Teaching Assistant for COMP 1023</EntrySubtitle>
         <EntryTime>2023-24 Summer</EntryTime>
         <EntryBadges>
           <LightBadge>UGTA</LightBadge>
