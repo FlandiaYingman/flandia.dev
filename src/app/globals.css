@@ -67,10 +67,9 @@
 
   @media (prefers-color-scheme: dark) {
     body {
-      @apply dark
+      @apply dark;
     }
   }
-
 }
 
 @layer base {
@@ -114,8 +113,9 @@
   }
 }
 
-q, blockquote {
-  @apply italic
+q,
+blockquote {
+  @apply italic;
 }
 
 blockquote::before {
@@ -126,10 +126,12 @@ blockquote::after {
   content: close-quote;
 }
 
-q::before, q::after, blockquote::before, blockquote::after {
-  @apply not-italic
+q::before,
+q::after,
+blockquote::before,
+blockquote::after {
+  @apply not-italic;
 }
-
 
 ul {
   @apply list-inside list-disc;
@@ -143,6 +145,7 @@ caption {
   @apply font-bold underline;
 }
 
-th, td {
+th,
+td {
   @apply px-2 py-1 text-left;
 }

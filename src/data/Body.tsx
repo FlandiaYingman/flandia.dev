@@ -471,7 +471,9 @@ const Body = () => (
       </Entry>
       <Entry>
         <EntryTitle>Department of Computer Science, HKUST</EntryTitle>
-        <EntrySubtitle>Undergraduate Teaching Assistant for COMP 1023</EntrySubtitle>
+        <EntrySubtitle>
+          Undergraduate Teaching Assistant for COMP 1023
+        </EntrySubtitle>
         <EntryTime>2023-24 Summer</EntryTime>
         <EntryBadges>
           <LightBadge>UGTA</LightBadge>

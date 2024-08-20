@@ -83,7 +83,7 @@ export function Project({
 }
 
 export const ProjectCards = ({ children }: PropsWithChildren) => (
-  <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
+  <div className="-mx-3 grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 print:grid-cols-3 print:gap-2">
     {children}
   </div>
 );

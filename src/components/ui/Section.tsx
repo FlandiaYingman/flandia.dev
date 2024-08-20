@@ -6,14 +6,19 @@ export interface SectionProps extends React.HTMLAttributes<HTMLDivElement> {
   hiddenPrint?: boolean;
 }
 
-export function Section({ className, newPage, hiddenPrint, ...props }: SectionProps) {
+export function Section({
+  className,
+  newPage,
+  hiddenPrint,
+  ...props
+}: SectionProps) {
   return (
     <section
       className={cn(
         "flex min-h-0 flex-col gap-y-3",
         className,
         newPage && "print-force-new-page",
-        hiddenPrint && "print:hidden"
+        hiddenPrint && "print:hidden",
       )}
       {...props}
     />
@@ -25,10 +30,5 @@ export function SectionTitle(props: PropsWithChildren<{}>) {
 }
 
 export function SectionText(props: PropsWithChildren<{}>) {
-  return (
-    <p
-      className="text-pretty font-mono text-sm"
-      {...props}
-    />
-  );
+  return <p className="text-pretty font-mono text-sm" {...props} />;
 }

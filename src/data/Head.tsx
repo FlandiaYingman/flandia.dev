@@ -76,7 +76,9 @@ const Socials = ({ children }: PropsWithChildren) => (
 
 const Head = () => (
   <>
-    <Name>LI, Yu Hong Harry <span className='font-normal'>|</span> 李裕康</Name>
+    <Name>
+      LI, Yu Hong Harry <span className="font-normal">|</span> 李裕康
+    </Name>
     <About>
       Enthusiastic learner and developer, passionate about learning new
       technologies, practices and methodologies through intuition and hands-on

@@ -1,6 +1,10 @@
 import React from "react";
 
-export function toTable(columns: string[], rows: Record<string, string | number>[], caption?: string) {
+export function toTable(
+  columns: string[],
+  rows: Record<string, string | number>[],
+  caption?: string,
+) {
   return (
     <table>
       {caption && <caption>{caption}</caption>}

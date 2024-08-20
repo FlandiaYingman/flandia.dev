@@ -72,7 +72,7 @@ export const Entry = ({ children }: PropsWithChildren) => {
               </TooltipProvider>
             </div>
             <Collapsible open={collapseOpen}>
-              <CollapsibleContent className="data-[state=closed]:animate-collapsible-up data-[state=open]:animate-collapsible-down overflow-hidden">
+              <CollapsibleContent className="overflow-hidden data-[state=closed]:animate-collapsible-up data-[state=open]:animate-collapsible-down">
                 <CardContent className="mt-2 space-y-2 text-sm" {...details} />
               </CollapsibleContent>
             </Collapsible>
