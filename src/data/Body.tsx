@@ -427,6 +427,7 @@ const Body = () => (
         <EntryTime>2023-24 Fall - Now</EntryTime>
         <EntryBadges>
           <LightBadge>Core Member</LightBadge>
+          <LightBadge>Voluntary</LightBadge>
         </EntryBadges>
         <EntryDescription>
           USThing is a student-developed all-in-one app for HKUST. The team
@@ -483,6 +484,23 @@ const Body = () => (
           invited me to become a UGTA for his new course, COMP 1023
           (Introduction to Python Programming), helping with designing and
           preparing the course.
+        </EntryDescription>
+      </Entry>
+      <Entry>
+        <EntryTitle>Department of Computer Science, HKUST</EntryTitle>
+        <EntrySubtitle>
+          Undergraduate Teaching Assistant for COMP 2012
+        </EntrySubtitle>
+        <EntryTime>2024-25 Fall</EntryTime>
+        <EntryBadges>
+          <LightBadge>UGTA</LightBadge>
+          <LightBadge>COMP 2012</LightBadge>
+        </EntryBadges>
+        <EntryDescription>
+          With all experiences in the previous UGTA courses, I will serve as a
+          UGTA for COMP 2012 (Object-Oriented Programming and Data Structures)
+          in the next term, helping students with their object-oriented
+          programming concepts and understanding of data structures.
         </EntryDescription>
       </Entry>
     </Section>
