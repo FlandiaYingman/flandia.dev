@@ -29,17 +29,6 @@ import {
 } from "@/components/sub-entry";
 import { toTable } from "@/utils/table";
 
-function a(href: string) {
-  // eslint-disable-next-line react/display-name
-  return (children: string) => (
-    <a href={href} target="_blank" className="underline">
-      {children}
-    </a>
-  );
-}
-
-const COMP2211_NOTES = a("https://www.overleaf.com/read/vxpjvbsxqfxm#43f239");
-
 const Body = () => (
   <>
     <Section>
