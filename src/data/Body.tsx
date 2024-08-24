@@ -401,6 +401,15 @@ const Body = () => (
         </EntrySubtitle>
         <EntryTime>2023-24</EntryTime>
       </Entry>
+      <Entry>
+        <EntryTitle>
+          HKUST Alumni Endowment Fund High Flyers Program Scholarship
+        </EntryTitle>
+        <EntrySubtitle>
+          HKUST. Nominated by Department of Computer Science and Engineering
+        </EntrySubtitle>
+        <EntryTime>2023-24</EntryTime>
+      </Entry>
     </Section>
     <Section>
       <SectionTitle>Work Experience</SectionTitle>
