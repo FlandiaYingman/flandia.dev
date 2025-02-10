@@ -398,7 +398,7 @@ const Body = () => (
       <Entry>
         <EntryTitle>Dean's List</EntryTitle>
         <EntrySubtitle>School of Engineering, HKUST</EntrySubtitle>
-        <EntryTime>2023-24 Fall</EntryTime>
+        <EntryTime>2023-24 Fall, Spring</EntryTime>
       </Entry>
       <Entry>
         <EntryTitle>Best UGTA Award-Honorable Mention</EntryTitle>
