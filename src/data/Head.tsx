@@ -88,8 +88,8 @@ const Head = () => (
     </Name>
     <About>
       Enthusiastic learner and developer, passionate about learning new
-      technologies, practices and methodologies through intuition and hands-on
-      experience.
+      theories, practices and methodologies through intuition and hands-on
+      experiences.
       <blockquote>Work hard. Play hard.</blockquote>
       <blockquote>Humans pursue knowledge not to surpass others.</blockquote>
     </About>

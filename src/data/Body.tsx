@@ -28,17 +28,34 @@ import {
   SubEntryTitle,
 } from "@/components/sub-entry";
 import { toTable } from "@/utils/table";
+import { CustomTooltip } from "@/components/custom-tooltip";
 
 const Body = () => (
   <>
     <Section>
       <SectionTitle>About</SectionTitle>
       <SectionText>
-        I am highly interested in Computer Science about learning new theories
-        and technologies, and I am methodically experienced in developing and
-        maintaining apps, websites and server software. I am also an excellent
-        team player with a strong ability to share knowledge and collaborate
-        with others.
+        I am highly interested in various fields in computer science,
+        particularly in{" "}
+        <CustomTooltip
+          trigger={
+            <u>
+              <i>theoretical computer science (theory B)</i>
+            </u>
+          }
+          content={
+            <>
+              Logic, Semantics and Automata;
+              <br />
+              Formal Models and Rewriting Systems;
+              <br />
+              Theory of Programming Languages.
+            </>
+          }
+        />
+        . I am methodically experienced in developing and maintaining
+        client/server apps and websites. I am also experienced in and currently
+        exploring more about data mining, manipulation and visualization.
       </SectionText>
     </Section>
     <Section>
