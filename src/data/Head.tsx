@@ -77,7 +77,14 @@ const Socials = ({ children }: PropsWithChildren) => (
 const Head = () => (
   <>
     <Name>
-      LI, Yu Hong Harry <span className="font-normal">|</span> 李裕康
+      LI, Yu Hong Harry <span className="font-normal">|</span>{" "}
+      <ruby>
+        李<rt>LI</rt>
+      </ruby>
+      <ruby>
+        裕康
+        <rt>Yu Hong</rt>
+      </ruby>
     </Name>
     <About>
       Enthusiastic learner and developer, passionate about learning new
