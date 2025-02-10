@@ -8,7 +8,7 @@ import {
   EntryDetailsTooltip,
   EntrySubtitle,
   EntryTime,
-  EntryTitle,
+  EntryTitle
 } from "@/components/Entry";
 import { Badges, DarkBadge, LightBadge } from "@/components/ui/Badge";
 import {
@@ -17,16 +17,10 @@ import {
   ProjectCards,
   ProjectDescription,
   ProjectLabel,
-  ProjectTitle,
+  ProjectTitle
 } from "@/components/Project";
 import React from "react";
-import {
-  SubEntry,
-  SubEntryBadges,
-  SubEntryDescription,
-  SubEntryTime,
-  SubEntryTitle,
-} from "@/components/sub-entry";
+import { SubEntry, SubEntryBadges, SubEntryDescription, SubEntryTime, SubEntryTitle } from "@/components/sub-entry";
 import { toTable } from "@/utils/table";
 import { CustomTooltip } from "@/components/custom-tooltip";
 
@@ -432,12 +426,16 @@ const Body = () => (
       </Entry>
       <Entry>
         <EntryTitle>Mr & Mrs Poon Kuen Seng Memorial Scholarships</EntryTitle>
-        <EntrySubtitle>Department of Computer Science and Engineering, HKUST</EntrySubtitle>
+        <EntrySubtitle>
+          Department of Computer Science and Engineering, HKUST
+        </EntrySubtitle>
         <EntryTime>2024-25</EntryTime>
       </Entry>
       <Entry>
         <EntryTitle>AEON Credit Service Scholarships</EntryTitle>
-        <EntrySubtitle>Hong Kong University of Science and Technology</EntrySubtitle>
+        <EntrySubtitle>
+          Hong Kong University of Science and Technology
+        </EntrySubtitle>
         <EntryTime>2024-25</EntryTime>
         <EntryDescription>
           <i>In process of seeking donor's approval.</i>
@@ -557,6 +555,54 @@ const Body = () => (
           <LightBadge>UGTA</LightBadge>
           <LightBadge>COMP 2011</LightBadge>
         </EntryBadges>
+      </Entry>
+    </Section>
+    <Section>
+      <SectionTitle>Research Experiences</SectionTitle>
+      <Entry>
+        <EntryTitle>Undergraduate Research Opportunities Program</EntryTitle>
+        <EntrySubtitle>
+          Programming Language Design and Implementation
+        </EntrySubtitle>
+        <EntryTime>2024-25 Fall, Spring</EntryTime>
+        <EntryDescription>
+          <p>
+            Supervised by Professor Lionel Parreaux, I implemented the language
+            feature <i>type classes</i> in <i>MLscript</i>, an object-oriented
+            and functional programming language founded and led by Professor
+            Lionel Parreaux. In particular, I implemented:
+          </p>
+          <ul>
+            <li>
+              Functions with <i>multiple parameter lists</i>.
+            </li>
+            <li>
+              <i>Module methods</i>, a type of methods (functions) or methods
+              that require extra handling by compiler on call site.
+            </li>
+            <li>
+              <i>Type classes</i>, including contextual parameters and given
+              instances.
+            </li>
+          </ul>
+          <p>
+            A new pass was being added to the compiler to effectively support
+            the new features. Now, I am continuing working on the new pass to
+            support other features that requires call-site handling.
+          </p>
+        </EntryDescription>
+      </Entry>
+      <Entry>
+        <EntryTitle>Independent Work</EntryTitle>
+        <EntrySubtitle>
+          AI Agents as Dynamic, Adaptive Language Assessors: Building a
+          Patentable APP
+        </EntrySubtitle>
+        <EntryTime>2024-25 Spring</EntryTime>
+        <EntryDescription>
+          Supervised by Dr. Desmond Tsoi, this project is currently in a early
+          stage of development.
+        </EntryDescription>
       </Entry>
     </Section>
     <Section>
