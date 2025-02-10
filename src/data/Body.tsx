@@ -445,7 +445,7 @@ const Body = () => (
       </Entry>
     </Section>
     <Section>
-      <SectionTitle>Work Experience</SectionTitle>
+      <SectionTitle>Work Experiences</SectionTitle>
       <Entry>
         <EntryTitle>Department of Computer Science, HKUST</EntryTitle>
         <EntrySubtitle>
