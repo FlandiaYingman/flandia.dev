@@ -597,7 +597,7 @@ const Body = () => (
         </EntryDescription>
       </Entry>
     </Section>
-    <Section>
+    <Section hiddenPrint>
       <SectionTitle>Projects</SectionTitle>
       <ProjectCards>
         <Project href="https://arkwaifu.cc">
