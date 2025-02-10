@@ -534,6 +534,17 @@ const Body = () => (
           programming concepts and understanding of data structures.
         </EntryDescription>
       </Entry>
+      <Entry>
+        <EntryTitle>Department of Computer Science, HKUST</EntryTitle>
+        <EntrySubtitle>
+          Undergraduate Teaching Assistant for COMP 2011
+        </EntrySubtitle>
+        <EntryTime>2024-25 Winter / Spring</EntryTime>
+        <EntryBadges>
+          <LightBadge>UGTA</LightBadge>
+          <LightBadge>COMP 2011</LightBadge>
+        </EntryBadges>
+      </Entry>
     </Section>
     <Section>
       <SectionTitle>Skills</SectionTitle>
