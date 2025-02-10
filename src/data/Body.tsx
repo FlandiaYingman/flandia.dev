@@ -416,6 +416,20 @@ const Body = () => (
         </EntrySubtitle>
         <EntryTime>2023-24</EntryTime>
       </Entry>
+      <Entry>
+        <EntryTitle>
+          University’s Scholarship Scheme for Continuing Undergraduate Students
+        </EntryTitle>
+        <EntrySubtitle>
+          Hong Kong University of Science and Technology
+        </EntrySubtitle>
+        <EntryTime>2024-25</EntryTime>
+      </Entry>
+      <Entry>
+        <EntryTitle>Dean's List</EntryTitle>
+        <EntrySubtitle>School of Engineering, HKUST</EntrySubtitle>
+        <EntryTime>2024-25 Fall</EntryTime>
+      </Entry>
     </Section>
     <Section>
       <SectionTitle>Work Experience</SectionTitle>
