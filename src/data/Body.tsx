@@ -368,47 +368,26 @@ const Body = () => (
     <Section>
       <SectionTitle>Awards & Achievements</SectionTitle>
       <Entry>
-        <EntryTitle>Outstanding Student Award</EntryTitle>
-        <EntrySubtitle>Shenzhen Fujing Foreign Language School</EntrySubtitle>
-        <EntryTime>2022</EntryTime>
-      </Entry>
-      <Entry>
-        <EntryTitle>&quot;Fujing Star&quot; Award</EntryTitle>
-        <EntrySubtitle>Shenzhen Fujing Foreign Language School</EntrySubtitle>
-        <EntryTime>2023</EntryTime>
-      </Entry>
-      <Entry>
-        <EntryTitle>First Prize Scholarship</EntryTitle>
-        <EntrySubtitle>Shenzhen Fujing Foreign Language School</EntrySubtitle>
-        <EntryTime>2023</EntryTime>
-      </Entry>
-      <Entry>
-        <EntryTitle>University Admissions Scholarship</EntryTitle>
+        <EntryTitle>AEON Credit Service Scholarships</EntryTitle>
         <EntrySubtitle>
           Hong Kong University of Science and Technology
         </EntrySubtitle>
-        <EntryTime>2023</EntryTime>
+        <EntryTime>2024-25</EntryTime>
+        <EntryDescription>
+          <i>In process of seeking donor's approval.</i>
+        </EntryDescription>
+      </Entry>
+      <Entry>
+        <EntryTitle>Mr & Mrs Poon Kuen Seng Memorial Scholarships</EntryTitle>
+        <EntrySubtitle>
+          Department of Computer Science and Engineering, HKUST
+        </EntrySubtitle>
+        <EntryTime>2024-25</EntryTime>
       </Entry>
       <Entry>
         <EntryTitle>Dean's List</EntryTitle>
         <EntrySubtitle>School of Engineering, HKUST</EntrySubtitle>
-        <EntryTime>2023-24 Fall, Spring</EntryTime>
-      </Entry>
-      <Entry>
-        <EntryTitle>Best UGTA Award-Honorable Mention</EntryTitle>
-        <EntrySubtitle>
-          Department of Computer Science and Engineering, HKUST
-        </EntrySubtitle>
-        <EntryTime>2023-24</EntryTime>
-      </Entry>
-      <Entry>
-        <EntryTitle>
-          HKUST Alumni Endowment Fund High Flyers Program Scholarship
-        </EntryTitle>
-        <EntrySubtitle>
-          HKUST. Nominated by Department of Computer Science and Engineering
-        </EntrySubtitle>
-        <EntryTime>2023-24</EntryTime>
+        <EntryTime>2024-25 Fall</EntryTime>
       </Entry>
       <Entry>
         <EntryTitle>
@@ -420,26 +399,47 @@ const Body = () => (
         <EntryTime>2024-25</EntryTime>
       </Entry>
       <Entry>
-        <EntryTitle>Dean's List</EntryTitle>
-        <EntrySubtitle>School of Engineering, HKUST</EntrySubtitle>
-        <EntryTime>2024-25 Fall</EntryTime>
+        <EntryTitle>
+          HKUST Alumni Endowment Fund High Flyers Program Scholarship
+        </EntryTitle>
+        <EntrySubtitle>
+          HKUST. Nominated by Department of Computer Science and Engineering
+        </EntrySubtitle>
+        <EntryTime>2023-24</EntryTime>
       </Entry>
       <Entry>
-        <EntryTitle>Mr & Mrs Poon Kuen Seng Memorial Scholarships</EntryTitle>
+        <EntryTitle>Best UGTA Award-Honorable Mention</EntryTitle>
         <EntrySubtitle>
           Department of Computer Science and Engineering, HKUST
         </EntrySubtitle>
-        <EntryTime>2024-25</EntryTime>
+        <EntryTime>2023-24</EntryTime>
       </Entry>
       <Entry>
-        <EntryTitle>AEON Credit Service Scholarships</EntryTitle>
+        <EntryTitle>Dean's List</EntryTitle>
+        <EntrySubtitle>School of Engineering, HKUST</EntrySubtitle>
+        <EntryTime>2023-24 Fall, Spring</EntryTime>
+      </Entry>
+      <Entry>
+        <EntryTitle>University Admissions Scholarship</EntryTitle>
         <EntrySubtitle>
           Hong Kong University of Science and Technology
         </EntrySubtitle>
-        <EntryTime>2024-25</EntryTime>
-        <EntryDescription>
-          <i>In process of seeking donor's approval.</i>
-        </EntryDescription>
+        <EntryTime>2023</EntryTime>
+      </Entry>
+      <Entry>
+        <EntryTitle>First Prize Scholarship</EntryTitle>
+        <EntrySubtitle>Shenzhen Fujing Foreign Language School</EntrySubtitle>
+        <EntryTime>2023</EntryTime>
+      </Entry>
+      <Entry>
+        <EntryTitle>&quot;Fujing Star&quot; Award</EntryTitle>
+        <EntrySubtitle>Shenzhen Fujing Foreign Language School</EntrySubtitle>
+        <EntryTime>2023</EntryTime>
+      </Entry>
+      <Entry>
+        <EntryTitle>Outstanding Student Award</EntryTitle>
+        <EntrySubtitle>Shenzhen Fujing Foreign Language School</EntrySubtitle>
+        <EntryTime>2022</EntryTime>
       </Entry>
     </Section>
     <Section>
@@ -449,16 +449,62 @@ const Body = () => (
         <EntrySubtitle>
           Undergraduate Teaching Assistant for COMP 2011
         </EntrySubtitle>
-        <EntryTime>2023-24 Spring</EntryTime>
+        <EntryTime>2024-25 Winter / Spring</EntryTime>
         <EntryBadges>
           <LightBadge>UGTA</LightBadge>
           <LightBadge>COMP 2011</LightBadge>
         </EntryBadges>
+      </Entry>
+      <Entry>
+        <EntryTitle>Department of Computer Science, HKUST</EntryTitle>
+        <EntrySubtitle>
+          Undergraduate Teaching Assistant for COMP 2012
+        </EntrySubtitle>
+        <EntryTime>2024-25 Fall</EntryTime>
+        <EntryBadges>
+          <LightBadge>UGTA</LightBadge>
+          <LightBadge>COMP 2012</LightBadge>
+        </EntryBadges>
         <EntryDescription>
-          Having taken the course and performing extremely well in COMP 2011
-          (Programming with C++), I was invited by Dr. Cindy Li to become a
-          UGTA. In the next term, I served as a rare freshman UGTA for COMP 2011
-          with Prof. Brian Mak as the course coordinator.
+          With all experiences in the previous UGTA courses, I will serve as a
+          UGTA for COMP 2012 (Object-Oriented Programming and Data Structures)
+          in the next term, helping students with their object-oriented
+          programming concepts and understanding of data structures.
+        </EntryDescription>
+      </Entry>
+      <Entry>
+        <EntryTitle>Department of Computer Science, HKUST</EntryTitle>
+        <EntrySubtitle>
+          Undergraduate Teaching Assistant for COMP 1023
+        </EntrySubtitle>
+        <EntryTime>2023-24 Summer</EntryTime>
+        <EntryBadges>
+          <LightBadge>UGTA</LightBadge>
+          <LightBadge>COMP 1023</LightBadge>
+        </EntryBadges>
+        <EntryDescription>
+          After performing outstandingly in COMP 2211 (Exploring Artificial
+          Intelligence) and COMP 2012 (Object-Oriented Programming and Data
+          Structures), Dr. Desmond Tsoi, the instructor of COMP 2211 and 2012,
+          invited me to become a UGTA for his new course, COMP 1023
+          (Introduction to Python Programming), helping with designing and
+          preparing the course.
+        </EntryDescription>
+      </Entry>
+      <Entry>
+        <EntryTitle>GREAT Smart Cities Institute, HKUST</EntryTitle>
+        <EntrySubtitle>Summer Internship</EntrySubtitle>
+        <EntryTime>2023-24 Summer</EntryTime>
+        <EntryBadges>
+          <LightBadge>Part Time</LightBadge>
+        </EntryBadges>
+        <EntryDescription>
+          I developed and implemented an automated software solution utilizing
+          computer vision technology to efficiently process and analyze traffic
+          data, and integrated it with GIS software to enhance data
+          visualization and spatial analysis capabilities. Additionally, I
+          streamlined workflows to improve the accuracy and speed of traffic
+          data processing.
         </EntryDescription>
       </Entry>
       <Entry>
@@ -494,71 +540,37 @@ const Body = () => (
         </EntryDescription>
       </Entry>
       <Entry>
-        <EntryTitle>GREAT Smart Cities Institute, HKUST</EntryTitle>
-        <EntrySubtitle>Summer Internship</EntrySubtitle>
-        <EntryTime>2023-24 Summer</EntryTime>
-        <EntryBadges>
-          <LightBadge>Part Time</LightBadge>
-        </EntryBadges>
-        <EntryDescription>
-          I developed and implemented an automated software solution utilizing
-          computer vision technology to efficiently process and analyze traffic
-          data, and integrated it with GIS software to enhance data
-          visualization and spatial analysis capabilities. Additionally, I
-          streamlined workflows to improve the accuracy and speed of traffic
-          data processing.
-        </EntryDescription>
-      </Entry>
-      <Entry>
-        <EntryTitle>Department of Computer Science, HKUST</EntryTitle>
-        <EntrySubtitle>
-          Undergraduate Teaching Assistant for COMP 1023
-        </EntrySubtitle>
-        <EntryTime>2023-24 Summer</EntryTime>
-        <EntryBadges>
-          <LightBadge>UGTA</LightBadge>
-          <LightBadge>COMP 1023</LightBadge>
-        </EntryBadges>
-        <EntryDescription>
-          After performing outstandingly in COMP 2211 (Exploring Artificial
-          Intelligence) and COMP 2012 (Object-Oriented Programming and Data
-          Structures), Dr. Desmond Tsoi, the instructor of COMP 2211 and 2012,
-          invited me to become a UGTA for his new course, COMP 1023
-          (Introduction to Python Programming), helping with designing and
-          preparing the course.
-        </EntryDescription>
-      </Entry>
-      <Entry>
-        <EntryTitle>Department of Computer Science, HKUST</EntryTitle>
-        <EntrySubtitle>
-          Undergraduate Teaching Assistant for COMP 2012
-        </EntrySubtitle>
-        <EntryTime>2024-25 Fall</EntryTime>
-        <EntryBadges>
-          <LightBadge>UGTA</LightBadge>
-          <LightBadge>COMP 2012</LightBadge>
-        </EntryBadges>
-        <EntryDescription>
-          With all experiences in the previous UGTA courses, I will serve as a
-          UGTA for COMP 2012 (Object-Oriented Programming and Data Structures)
-          in the next term, helping students with their object-oriented
-          programming concepts and understanding of data structures.
-        </EntryDescription>
-      </Entry>
-      <Entry>
         <EntryTitle>Department of Computer Science, HKUST</EntryTitle>
         <EntrySubtitle>
           Undergraduate Teaching Assistant for COMP 2011
         </EntrySubtitle>
-        <EntryTime>2024-25 Winter / Spring</EntryTime>
+        <EntryTime>2023-24 Spring</EntryTime>
         <EntryBadges>
           <LightBadge>UGTA</LightBadge>
           <LightBadge>COMP 2011</LightBadge>
         </EntryBadges>
+        <EntryDescription>
+          Having taken the course and performing extremely well in COMP 2011
+          (Programming with C++), I was invited by Dr. Cindy Li to become a
+          UGTA. In the next term, I served as a rare freshman UGTA for COMP 2011
+          with Prof. Brian Mak as the course coordinator.
+        </EntryDescription>
       </Entry>
     </Section>
     <Section>
       <SectionTitle>Research Experiences</SectionTitle>
+      <Entry>
+        <EntryTitle>Independent Work</EntryTitle>
+        <EntrySubtitle>
+          AI Agents as Dynamic, Adaptive Language Assessors: Building a
+          Patentable APP
+        </EntrySubtitle>
+        <EntryTime>2024-25 Spring</EntryTime>
+        <EntryDescription>
+          Supervised by Dr. Desmond Tsoi, this project is currently in a early
+          stage of development.
+        </EntryDescription>
+      </Entry>
       <Entry>
         <EntryTitle>Undergraduate Research Opportunities Program</EntryTitle>
         <EntrySubtitle>
@@ -590,18 +602,6 @@ const Body = () => (
             the new features. Now, I am continuing working on the new pass to
             support other features that requires call-site handling.
           </p>
-        </EntryDescription>
-      </Entry>
-      <Entry>
-        <EntryTitle>Independent Work</EntryTitle>
-        <EntrySubtitle>
-          AI Agents as Dynamic, Adaptive Language Assessors: Building a
-          Patentable APP
-        </EntrySubtitle>
-        <EntryTime>2024-25 Spring</EntryTime>
-        <EntryDescription>
-          Supervised by Dr. Desmond Tsoi, this project is currently in a early
-          stage of development.
         </EntryDescription>
       </Entry>
     </Section>
