@@ -413,6 +413,8 @@ const Body = () => (
           <Badges>
             <DarkBadge>Java</DarkBadge>
             <DarkBadge>Kotlin</DarkBadge>
+            <DarkBadge>Scala</DarkBadge>
+            <DarkBadge>MLscript</DarkBadge>
             <DarkBadge>Golang</DarkBadge>
             <DarkBadge>C / C++</DarkBadge>
             <DarkBadge>HTML</DarkBadge>
@@ -434,6 +436,9 @@ const Body = () => (
             <DarkBadge>Keras</DarkBadge>
             <DarkBadge>TensorFlow</DarkBadge>
             <DarkBadge>PostgreSQL</DarkBadge>
+            <DarkBadge>React Native</DarkBadge>
+            <DarkBadge>Fastify</DarkBadge>
+            <DarkBadge>MongoDB</DarkBadge>
           </Badges>
         </EntryDescription>
       </Entry>
@@ -446,6 +451,7 @@ const Body = () => (
             <DarkBadge>Microsoft Word</DarkBadge>
             <DarkBadge>Microsoft Excel</DarkBadge>
             <DarkBadge>LaTeX</DarkBadge>
+            <DarkBadge>Typst</DarkBadge>
             <DarkBadge>ChatGPT</DarkBadge>
             <DarkBadge>GenAI</DarkBadge>
             <DarkBadge>Video Games</DarkBadge>
