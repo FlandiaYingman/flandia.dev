@@ -696,23 +696,6 @@ const Body = () => (
           </ProjectBadges>
           <ProjectLabel>flandia.dev</ProjectLabel>
         </Project>
-        <Project href="https://chat-at-ust.flandia.dev/">
-          <ProjectTitle>Chat @ UST</ProjectTitle>
-          <ProjectDescription>
-            An improved ChatGPT frontend for HKUST’s ChatGPT API. It is
-            currently under beta testing phase.
-          </ProjectDescription>
-          <ProjectBadges>
-            <LightBadge>Side Project</LightBadge>
-            <LightBadge>Beta Phase</LightBadge>
-            <LightBadge>TypeScript</LightBadge>
-            <LightBadge>React</LightBadge>
-            <LightBadge>Mui</LightBadge>
-            <LightBadge>Material Design</LightBadge>
-            <LightBadge>ChatGPT</LightBadge>
-          </ProjectBadges>
-          <ProjectLabel>chat-at-ust.flandia.dev</ProjectLabel>
-        </Project>
       </ProjectCards>
     </Section>
   </>
