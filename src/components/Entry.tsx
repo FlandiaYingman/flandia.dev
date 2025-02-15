@@ -62,9 +62,9 @@ export const Entry = ({ children }: PropsWithChildren) => {
                 <Tooltip>
                   <TooltipTrigger>
                     {collapseOpen ? (
-                      <ChevronsDownUp className="h-4 w-4" />
+                      <ChevronsDownUp className="h-4 w-4 cursor-pointer" />
                     ) : (
-                      <ChevronsUpDown className="h-4 w-4" />
+                      <ChevronsUpDown className="h-4 w-4 cursor-pointer" />
                     )}
                   </TooltipTrigger>
                   <TooltipContent {...detailsTooltip} />

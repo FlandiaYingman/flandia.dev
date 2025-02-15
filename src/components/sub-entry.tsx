@@ -22,12 +22,12 @@ export const SubEntry = ({ children }: PropsWithChildren) =>
       <Card>
         <CardHeader>
           <div className="flex items-center justify-between text-base">
-            <h3 className="inline-flex flex-wrap items-center gap-2 font-semibold leading-none">
+            <h4 className="inline-flex flex-wrap items-center gap-2 text-sm leading-none font-semibold text-gray-700">
               <span {...title} />
               <Badges {...badges} />
-            </h3>
+            </h4>
             <div
-              className="shrink-0 text-sm tabular-nums text-gray-500"
+              className="shrink-0 text-sm text-gray-500 tabular-nums"
               {...time}
             />
           </div>
@@ -35,7 +35,9 @@ export const SubEntry = ({ children }: PropsWithChildren) =>
             <h4 className="font-mono text-sm leading-none" {...subtitle} />
           )}
         </CardHeader>
-        <CardContent className="mt-2 space-y-1 text-xs" {...description} />
+        {description && (
+          <CardContent className="mt-2 space-y-1 text-xs" {...description} />
+        )}
       </Card>
     );
   });
