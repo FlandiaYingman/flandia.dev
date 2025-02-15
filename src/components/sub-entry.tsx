@@ -27,7 +27,7 @@ export const SubEntry = ({ children }: PropsWithChildren) =>
               <Badges {...badges} />
             </h3>
             <div
-              className="flex-shrink-0 text-sm tabular-nums text-gray-500"
+              className="shrink-0 text-sm tabular-nums text-gray-500"
               {...time}
             />
           </div>
