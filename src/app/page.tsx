@@ -4,6 +4,7 @@ import React from "react";
 import Head from "@/data/Head";
 import Body from "@/data/Body";
 import { str } from "@/lib/utils";
+import { Comments } from "@/components/Comments";
 
 export const metadata: Metadata = {
   title: "LI, Yu Hong Harry | 李裕康",
@@ -20,6 +21,7 @@ export default function Page() {
     <main className="container relative mx-auto w-full max-w-4xl space-y-6 p-6 lg:p-16">
       <Head />
       <Body />
+      <Comments />
     </main>
   );
 }
