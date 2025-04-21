@@ -1,15 +1,15 @@
 import {
-  InternalAvatar,
+  Avatar,
   AvatarFallback,
   AvatarImage,
 } from "@/components/ui/Avatar";
 import React from "react";
 
-const Avatar = () => (
-  <InternalAvatar>
+const TheAvatar = () => (
+  <Avatar>
     <AvatarImage alt="Avatar" src="/avatar.jpg" />
     <AvatarFallback />
-  </InternalAvatar>
+  </Avatar>
 );
 
-export default Avatar;
+export default TheAvatar;

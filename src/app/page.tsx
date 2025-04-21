@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import React from "react";
 import Head from "@/data/Head";
 import Body from "@/data/Body";
-import Avatar from "@/data/Avatar";
+import TheAvatar from "@/data/TheAvatar";
 import { str } from "@/lib/utils";
 
 export const metadata: Metadata = {
@@ -23,7 +23,7 @@ export default function Page() {
         <div className="flex-1 space-y-1.5">
           <Head />
         </div>
-        <Avatar />
+        <TheAvatar />
       </div>
       <Body />
     </main>
