@@ -3,7 +3,6 @@ import { Metadata } from "next";
 import React from "react";
 import Head from "@/data/Head";
 import Body from "@/data/Body";
-import TheAvatar from "@/data/TheAvatar";
 import { str } from "@/lib/utils";
 
 export const metadata: Metadata = {
@@ -19,12 +18,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main className="container relative mx-auto w-full max-w-4xl space-y-6 p-6 lg:p-16">
-      <div className="flex items-center justify-between">
-        <div className="flex-1 space-y-1.5">
-          <Head />
-        </div>
-        <TheAvatar />
-      </div>
+      <Head />
       <Body />
     </main>
   );
