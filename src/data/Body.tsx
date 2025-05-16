@@ -169,9 +169,6 @@ const Body = () => (
           Hong Kong University of Science and Technology
         </EntrySubtitle>
         <EntryTime>2024-25</EntryTime>
-        <EntryDescription>
-          <i>In process of seeking donor's approval.</i>
-        </EntryDescription>
       </Entry>
       <Entry>
         <EntryTitle>Mr & Mrs Poon Kuen Seng Memorial Scholarships</EntryTitle>
