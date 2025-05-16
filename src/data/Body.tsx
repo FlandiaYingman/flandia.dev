@@ -399,6 +399,16 @@ const Body = () => (
       </Entry>
     </Section>
     <Section>
+      <SectionTitle>Other Experiences</SectionTitle>
+      <Entry>
+        <EntryTitle>UG Student Representative</EntryTitle>
+        <EntrySubtitle>
+          32nd Meeting, Student-Staff Liaison Committee, CSE, HKUST
+        </EntrySubtitle>
+        <EntryTime>12 May 2025</EntryTime>
+      </Entry>
+    </Section>
+    <Section>
       <SectionTitle>Skills</SectionTitle>
       <Entry>
         <EntryTitle>Programming Languages</EntryTitle>
