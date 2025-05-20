@@ -164,7 +164,7 @@ const Body = () => (
     <Section>
       <SectionTitle>Awards & Achievements</SectionTitle>
       <Entry>
-        <EntryTitle>AEON Credit Service Scholarships</EntryTitle>
+        <EntryTitle>AEON Credit Service (Asia) Scholarships</EntryTitle>
         <EntrySubtitle>
           Hong Kong University of Science and Technology
         </EntrySubtitle>
