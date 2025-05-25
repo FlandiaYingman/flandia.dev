@@ -67,7 +67,8 @@ const Body = () => (
             Major Cumulative Grade Average: 4.18/4.3 <br />
             Got A+ in <u>all</u> Computer Science courses. <br />
             Got the first place in <u>more than half</u> Computer Science
-            courses.
+            courses (some are estimation, e.g., highest in most grading
+            components).
           </p>
           <SubEntry>
             <SubEntryTitle>COMP 4431 Multimedia Computing</SubEntryTitle>
