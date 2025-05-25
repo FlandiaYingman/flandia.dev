@@ -73,7 +73,9 @@ const Body = () => (
           <SubEntry>
             <SubEntryTitle>COMP 4431 Multimedia Computing</SubEntryTitle>
             <SubEntryTime>2024-25 Spring</SubEntryTime>
-            <SubEntryBadges></SubEntryBadges>
+            <SubEntryBadges>
+              <LightBadge>1st</LightBadge>
+            </SubEntryBadges>
           </SubEntry>
           <SubEntry>
             <SubEntryTitle>
