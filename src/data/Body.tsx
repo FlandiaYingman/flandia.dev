@@ -63,12 +63,17 @@ const Body = () => (
         <EntryTime>2023 - 2027 (Pursuing)</EntryTime>
         <EntryDetails>
           <p>
-            Cumulative Grade Average: 4.179/4.3 <br />
-            Major Cumulative Grade Average: 4.209/4.3 <br />
+            <i>(As of June 9, 2025)</i>
+          </p>
+          <p>
+            Cumulative Grade Average (CGA): 4.179/4.3 <br />
+            Major Cumulative Grade Average (MCGA): 4.209/4.3 <br />
+          </p>
+          <p>
             Got A+ in <u>all</u> Computer Science courses. <br />
             Got the first place in <u>more than half</u> Computer Science
             courses (some are estimation, e.g., highest in most grading
-            components).
+            components). <br />
           </p>
           <SubEntry>
             <SubEntryTitle>COMP 4431 Multimedia Computing</SubEntryTitle>
