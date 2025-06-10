@@ -63,8 +63,8 @@ const Body = () => (
         <EntryTime>2023 - 2027 (Pursuing)</EntryTime>
         <EntryDetails>
           <p>
-            Cumulative Grade Average: 4.137/4.3 <br />
-            Major Cumulative Grade Average: 4.18/4.3 <br />
+            Cumulative Grade Average: 4.179/4.3 <br />
+            Major Cumulative Grade Average: 4.209/4.3 <br />
             Got A+ in <u>all</u> Computer Science courses. <br />
             Got the first place in <u>more than half</u> Computer Science
             courses (some are estimation, e.g., highest in most grading
@@ -74,6 +74,7 @@ const Body = () => (
             <SubEntryTitle>COMP 4431 Multimedia Computing</SubEntryTitle>
             <SubEntryTime>2024-25 Spring</SubEntryTime>
             <SubEntryBadges>
+              <LightBadge>A+</LightBadge>
               <LightBadge>1st</LightBadge>
             </SubEntryBadges>
           </SubEntry>
@@ -83,6 +84,7 @@ const Body = () => (
             </SubEntryTitle>
             <SubEntryTime>2024-25 Spring</SubEntryTime>
             <SubEntryBadges>
+              <LightBadge>A+</LightBadge>
               <LightBadge>1st</LightBadge>
             </SubEntryBadges>
           </SubEntry>
@@ -91,7 +93,9 @@ const Body = () => (
               COMP 3711 Design and Analysis of Algorithms
             </SubEntryTitle>
             <SubEntryTime>2024-25 Spring</SubEntryTime>
-            <SubEntryBadges></SubEntryBadges>
+            <SubEntryBadges>
+              <LightBadge>A+</LightBadge>
+            </SubEntryBadges>
           </SubEntry>
           <SubEntry>
             <SubEntryTitle>COMP 3021 Java Programming</SubEntryTitle>
