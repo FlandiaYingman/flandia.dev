@@ -26,7 +26,7 @@ export function Section({
 }
 
 export function SectionTitle(props: PropsWithChildren<{}>) {
-  return <h2 className="text-xl font-bold" {...props} />;
+  return <h2 className="text-xl font-bold break-after-avoid" {...props} />;
 }
 
 export function SectionText(props: PropsWithChildren<{}>) {

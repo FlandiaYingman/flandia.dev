@@ -1,7 +1,7 @@
 "use client";
 
 import { createHost, createSlot } from "create-slots";
-import React, { PropsWithChildren } from "react";
+import React, { PropsWithChildren, useCallback, useState } from "react";
 import { Card, CardContent, CardHeader } from "@/components/ui/Card";
 import { Badges } from "@/components/ui/Badge";
 import { ChevronsDownUp, ChevronsUpDown } from "lucide-react";
@@ -12,6 +12,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { useBeforePrint } from "@/utils/useBeforePrint";
 
 export const EntryTitle = createSlot();
 export const EntrySubtitle = createSlot();
@@ -22,7 +23,12 @@ export const EntryDetails = createSlot();
 export const EntryDetailsTooltip = createSlot();
 
 export const Entry = ({ children }: PropsWithChildren) => {
-  const [collapseOpen, setCollapseOpen] = React.useState(false);
+  const [collapseOpen, setCollapseOpen] = useState(false);
+
+  useBeforePrint(useCallback(() => {
+    setCollapseOpen(true);
+  }, []))
+
   return createHost(children, (Slots) => {
     const title = Slots.getProps(EntryTitle);
     const subtitle = Slots.getProps(EntrySubtitle);
@@ -33,7 +39,7 @@ export const Entry = ({ children }: PropsWithChildren) => {
     const detailsTooltip = Slots.getProps(EntryDetailsTooltip);
 
     return (
-      <Card className="break-inside-avoid-page">
+      <Card className="break-inside-avoid">
         <CardHeader>
           <div className="flex items-center justify-between gap-x-2 text-base">
             <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
