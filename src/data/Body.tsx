@@ -253,55 +253,37 @@ const Body = () => (
       <SectionTitle>Work Experiences</SectionTitle>
       <Entry>
         <EntryTitle>Department of Computer Science, HKUST</EntryTitle>
-        <EntrySubtitle>
-          Undergraduate Teaching Assistant for COMP 2011
-        </EntrySubtitle>
-        <EntryTime>2024-25 Winter / Spring</EntryTime>
-        <EntryBadges>
-          <LightBadge>UGTA</LightBadge>
-          <LightBadge>COMP 2011</LightBadge>
-        </EntryBadges>
-      </Entry>
-      <Entry>
-        <EntryTitle>Department of Computer Science, HKUST</EntryTitle>
-        <EntrySubtitle>
-          Undergraduate Teaching Assistant for COMP 2012
-        </EntrySubtitle>
-        <EntryTime>2024-25 Fall</EntryTime>
-        <EntryBadges>
-          <LightBadge>UGTA</LightBadge>
-          <LightBadge>COMP 2012</LightBadge>
-        </EntryBadges>
+        <EntrySubtitle>Undergraduate Teaching Assistant</EntrySubtitle>
+        <EntryTime>2023-24 Spring - Now</EntryTime>
         <EntryDescription>
-          With all experiences in the previous UGTA courses, I will serve as a
-          UGTA for COMP 2012 (Object-Oriented Programming and Data Structures)
-          in the next term, helping students with their object-oriented
-          programming concepts and understanding of data structures.
-        </EntryDescription>
-      </Entry>
-      <Entry>
-        <EntryTitle>Department of Computer Science, HKUST</EntryTitle>
-        <EntrySubtitle>
-          Undergraduate Teaching Assistant for COMP 1023
-        </EntrySubtitle>
-        <EntryTime>2023-24 Summer</EntryTime>
-        <EntryBadges>
-          <LightBadge>UGTA</LightBadge>
-          <LightBadge>COMP 1023</LightBadge>
-        </EntryBadges>
-        <EntryDescription>
-          After performing outstandingly in COMP 2211 (Exploring Artificial
-          Intelligence) and COMP 2012 (Object-Oriented Programming and Data
-          Structures), Dr. Desmond Tsoi, the instructor of COMP 2211 and 2012,
-          invited me to become a UGTA for his new course, COMP 1023
-          (Introduction to Python Programming), helping with designing and
-          preparing the course.
+          <p>
+            After performing outstandingly in the computer science courses.
+            Instructors invited me to serve as a undergraduate teaching
+            assistant (UGTA) for the course. As of 2024-25 Summer, I have served
+            as a UGTA for 6 semesters (including Summer and Winter) throughout 3
+            courses (COMP 2011, 2012 and 1023).
+          </p>
+          <ul>
+            <li>
+              Assisting instructors in preparing course materials, including
+              assignments, tutorial notes, lecture notes and self-tests.
+            </li>
+            <li>
+              Answering students' questions and providing guidance on lecture
+              materials, assignments, environment set-up, as well as introducing
+              advanced topics to students if they are interested.
+            </li>
+            <li>
+              Writing guides and instructions for students to set-up the
+              programming environment and to debug complex issues in programs.
+            </li>
+          </ul>
         </EntryDescription>
       </Entry>
       <Entry>
         <EntryTitle>GREAT Smart Cities Institute, HKUST</EntryTitle>
         <EntrySubtitle>Summer Internship</EntrySubtitle>
-        <EntryTime>2023-24 Summer</EntryTime>
+        <EntryTime>2023-24 Summer - Now</EntryTime>
         <EntryBadges>
           <LightBadge>Part Time</LightBadge>
         </EntryBadges>
@@ -344,23 +326,6 @@ const Body = () => (
               integration and deployment / release process.
             </li>
           </ul>
-        </EntryDescription>
-      </Entry>
-      <Entry>
-        <EntryTitle>Department of Computer Science, HKUST</EntryTitle>
-        <EntrySubtitle>
-          Undergraduate Teaching Assistant for COMP 2011
-        </EntrySubtitle>
-        <EntryTime>2023-24 Spring</EntryTime>
-        <EntryBadges>
-          <LightBadge>UGTA</LightBadge>
-          <LightBadge>COMP 2011</LightBadge>
-        </EntryBadges>
-        <EntryDescription>
-          Having taken the course and performing extremely well in COMP 2011
-          (Programming with C++), I was invited by Dr. Cindy Li to become a
-          UGTA. In the next term, I served as a rare freshman UGTA for COMP 2011
-          with Prof. Brian Mak as the course coordinator.
         </EntryDescription>
       </Entry>
     </Section>
