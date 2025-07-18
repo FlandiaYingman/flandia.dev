@@ -339,7 +339,7 @@ const Body = () => (
         </EntrySubtitle>
         <EntryTime>2024-25 Spring</EntryTime>
         <EntryDescription>
-          Supervised by Dr. Desmond Tsoi, this project is currently in a early
+          Supervised by Dr. Desmond Tsoi. This project is currently in a early
           stage of development.
         </EntryDescription>
       </Entry>
