@@ -174,6 +174,20 @@ const Body = () => (
         </EntryDetails>
         <EntryDetailsTooltip>Coursework</EntryDetailsTooltip>
       </Entry>
+      <Entry>
+        <EntryTitle>University of Pennsylvania</EntryTitle>
+        <EntrySubtitle>Exchange Program in Engineering School</EntrySubtitle>
+        <EntryTime>2025-26 Spring</EntryTime>
+        <EntryDetails>
+          <p>
+            <i>
+              Nominated by HKUST School of Engineering to participate in an
+              exchange program at UPenn in 2025-26 Spring.
+            </i>
+          </p>
+        </EntryDetails>
+        <EntryDetailsTooltip>Coursework</EntryDetailsTooltip>
+      </Entry>
     </Section>
     <Section>
       <SectionTitle>Awards & Achievements</SectionTitle>
