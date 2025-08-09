@@ -192,6 +192,13 @@ const Body = () => (
     <Section>
       <SectionTitle>Awards & Achievements</SectionTitle>
       <Entry>
+        <EntryTitle>Best UGTA Award</EntryTitle>
+        <EntrySubtitle>
+          Department of Computer Science and Engineering, HKUST
+        </EntrySubtitle>
+        <EntryTime>2024-25</EntryTime>
+      </Entry>
+      <Entry>
         <EntryTitle>AEON Credit Service (Asia) Scholarships</EntryTitle>
         <EntrySubtitle>
           Hong Kong University of Science and Technology
