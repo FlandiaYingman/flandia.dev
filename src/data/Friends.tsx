@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 /* eslint-disable react/no-unescaped-entities */
 import { Friend, FriendProps } from "@/components/Friend";
@@ -64,6 +64,37 @@ const FriendList: FriendProps[] = [
     ),
     avatar:
       "https://galvingao.com/content/images/size/w600/2022/04/avatar-2dim-circle_512x512.png",
+  },
+  {
+    href: "https://github.com/LeoZhu6",
+    name: "Leo Zhu",
+    desc: (
+      <>
+        UG in ... IDK @ HKUST '27 <br />
+        Funny science student who claims to be from the business school 🐽
+      </>
+    ),
+    avatar: "https://avatars.githubusercontent.com/u/142682002?v=4",
+  },
+  {
+    href: "https://www.markng.com/",
+    name: "Mark Ng",
+    desc: (
+      <>
+        PhD in CS @ HKUST '29 <br />
+        PL & Compiler. Oh no! His{" "}
+        <u>
+          <i>
+            <b>top-quality</b>
+          </i>
+        </u>{" "}
+        <a href="https://github.com/hkust-taco/mlscript/pull/266">lifter</a>{" "}
+        breaks my{" "}
+        <a href="https://github.com/hkust-taco/mlscript/pull/343">PR</a> again.
+        🤧
+      </>
+    ),
+    avatar: "https://avatars.githubusercontent.com/u/55091936?v=4",
   },
 ];
 
