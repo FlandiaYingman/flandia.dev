@@ -96,6 +96,19 @@ const FriendList: FriendProps[] = [
     ),
     avatar: "https://avatars.githubusercontent.com/u/55091936?v=4",
   },
+  {
+    href: "https://kf8311.github.io/",
+    name: "Bosco Lam",
+    desc: (
+      <>
+        UG in COMP @ HKUST '28 <br />
+        MyGO Mujica🤧<br />
+        Also checkout <a href="https://www.facebook.com/profile.php?id=100077715879412">KD Workshop</a><br />
+        if you know omsi2🤧
+      </>
+    ),
+    avatar: "https://avatars.githubusercontent.com/u/182246735?s=400&u=8201c15bdf1680766612714100f171e99781767c&v=4",
+  },
 ];
 
 export const Friends: FC = () => {
