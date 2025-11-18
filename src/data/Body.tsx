@@ -192,6 +192,14 @@ const Body = () => (
     <Section>
       <SectionTitle>Awards & Achievements</SectionTitle>
       <Entry>
+        <EntryTitle>Fung Scholarships</EntryTitle>
+        <EntrySubtitle>
+          <i>Victor and William Fung Foundation Limited</i> and
+          Hong Kong University of Science and Technology
+        </EntrySubtitle>
+        <EntryTime>2025-26</EntryTime>
+      </Entry>
+      <Entry>
         <EntryTitle>Best UGTA Award</EntryTitle>
         <EntrySubtitle>
           Department of Computer Science and Engineering, HKUST
