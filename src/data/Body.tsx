@@ -192,6 +192,13 @@ const Body = () => (
     <Section>
       <SectionTitle>Awards & Achievements</SectionTitle>
       <Entry>
+        <EntryTitle>IET Prize 2025</EntryTitle>
+        <EntrySubtitle>
+          <i>IET Hong Kong</i>
+        </EntrySubtitle>
+        <EntryTime>2025-26</EntryTime>
+      </Entry>
+      <Entry>
         <EntryTitle>Fung Scholarships</EntryTitle>
         <EntrySubtitle>
           <i>Victor and William Fung Foundation Limited</i> and
