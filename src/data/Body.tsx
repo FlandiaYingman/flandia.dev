@@ -201,7 +201,7 @@ const Body = () => (
       <Entry>
         <EntryTitle>Fung Scholarships</EntryTitle>
         <EntrySubtitle>
-          <i>Victor and William Fung Foundation Limited</i> and
+          <i>Victor and William Fung Foundation Limited</i>, and
           Hong Kong University of Science and Technology
         </EntrySubtitle>
         <EntryTime>2025-26</EntryTime>
