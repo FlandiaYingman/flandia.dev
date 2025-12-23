@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Section, SectionText, SectionTitle } from "@/components/ui/Section";
+import { CustomTooltip } from "@/components/custom-tooltip";
 import {
   Entry,
   EntryBadges,
@@ -8,20 +8,24 @@ import {
   EntryDetailsTooltip,
   EntrySubtitle,
   EntryTime,
-  EntryTitle
+  EntryTitle,
 } from "@/components/Entry";
-import { Badges, DarkBadge, LightBadge } from "@/components/ui/Badge";
 import {
   Project,
   ProjectBadges,
   ProjectCards,
   ProjectDescription,
   ProjectLabel,
-  ProjectTitle
+  ProjectTitle,
 } from "@/components/Project";
-import React from "react";
-import { SubEntry, SubEntryBadges, SubEntryTime, SubEntryTitle } from "@/components/sub-entry";
-import { CustomTooltip } from "@/components/custom-tooltip";
+import {
+  SubEntry,
+  SubEntryBadges,
+  SubEntryTime,
+  SubEntryTitle,
+} from "@/components/sub-entry";
+import { Badges, DarkBadge, LightBadge } from "@/components/ui/Badge";
+import { Section, SectionText, SectionTitle } from "@/components/ui/Section";
 import { Friends } from "@/data/Friends";
 
 const Body = () => (
@@ -201,8 +205,8 @@ const Body = () => (
       <Entry>
         <EntryTitle>Fung Scholarships</EntryTitle>
         <EntrySubtitle>
-          <i>Victor and William Fung Foundation Limited</i>, and
-          Hong Kong University of Science and Technology
+          <i>Victor and William Fung Foundation Limited</i>, and Hong Kong
+          University of Science and Technology
         </EntrySubtitle>
         <EntryTime>2025-26</EntryTime>
       </Entry>

@@ -1,12 +1,12 @@
-import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
-import React, { createElement, FC, PropsWithChildren } from "react";
 import { Button } from "@/components/ui/Button";
+import TheAvatar from "@/data/TheAvatar";
 import {
   SiGithub,
   SiInstagram,
   SiThreads,
 } from "@icons-pack/react-simple-icons";
-import TheAvatar from "@/data/TheAvatar";
+import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
+import { createElement, FC, PropsWithChildren } from "react";
 
 const Name = ({ children }: PropsWithChildren) => (
   <h1 className="text-2xl font-bold">{children}</h1>
@@ -95,7 +95,9 @@ const Head = () => (
           theories, practices and methodologies through intuition and hands-on
           experiences.
           <blockquote>Work hard. Play hard.</blockquote>
-          <blockquote>Humans pursue knowledge not to surpass others.</blockquote>
+          <blockquote>
+            Humans pursue knowledge not to surpass others.
+          </blockquote>
         </About>
         <Location href="https://maps.app.goo.gl/YZuY7rM4Mf9mvP9i8">
           HKUST, Hong Kong SAR

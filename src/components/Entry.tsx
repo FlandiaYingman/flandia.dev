@@ -1,10 +1,7 @@
 "use client";
 
-import { createHost, createSlot } from "create-slots";
-import React, { PropsWithChildren, useCallback, useState } from "react";
-import { Card, CardContent, CardHeader } from "@/components/ui/Card";
 import { Badges } from "@/components/ui/Badge";
-import { ChevronsDownUp, ChevronsUpDown } from "lucide-react";
+import { Card, CardContent, CardHeader } from "@/components/ui/Card";
 import { Collapsible, CollapsibleContent } from "@/components/ui/collapsible";
 import {
   Tooltip,
@@ -13,6 +10,9 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { useBeforePrint } from "@/utils/useBeforePrint";
+import { createHost, createSlot } from "create-slots";
+import { ChevronsDownUp, ChevronsUpDown } from "lucide-react";
+import { PropsWithChildren, useCallback, useState } from "react";
 
 export const EntryTitle = createSlot();
 export const EntrySubtitle = createSlot();
@@ -25,9 +25,11 @@ export const EntryDetailsTooltip = createSlot();
 export const Entry = ({ children }: PropsWithChildren) => {
   const [collapseOpen, setCollapseOpen] = useState(false);
 
-  useBeforePrint(useCallback(() => {
-    setCollapseOpen(true);
-  }, []))
+  useBeforePrint(
+    useCallback(() => {
+      setCollapseOpen(true);
+    }, []),
+  );
 
   return createHost(children, (Slots) => {
     const title = Slots.getProps(EntryTitle);

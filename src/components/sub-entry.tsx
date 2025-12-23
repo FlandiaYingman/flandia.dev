@@ -1,9 +1,9 @@
 "use client";
 
-import { createHost, createSlot } from "create-slots";
-import React, { PropsWithChildren } from "react";
-import { Card, CardContent, CardHeader } from "@/components/ui/Card";
 import { Badges } from "@/components/ui/Badge";
+import { Card, CardContent, CardHeader } from "@/components/ui/Card";
+import { createHost, createSlot } from "create-slots";
+import { PropsWithChildren } from "react";
 
 export const SubEntryTitle = createSlot();
 export const SubEntrySubtitle = createSlot();

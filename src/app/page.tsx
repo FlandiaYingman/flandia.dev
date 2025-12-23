@@ -1,10 +1,8 @@
-/* eslint-disable react/no-unescaped-entities */
-import { Metadata } from "next";
-import React from "react";
-import Head from "@/data/Head";
-import Body from "@/data/Body";
-import { str } from "@/lib/utils";
 import { Comments } from "@/components/Comments";
+import Body from "@/data/Body";
+import Head from "@/data/Head";
+import { str } from "@/lib/utils";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "LI, Yu Hong Harry | 李裕康",

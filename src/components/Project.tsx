@@ -1,5 +1,8 @@
 "use client";
 
+import { createHost, createSlot } from "create-slots";
+import { PropsWithChildren } from "react";
+import { twMerge } from "tailwind-merge";
 import {
   Card,
   CardContent,
@@ -7,9 +10,6 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/Card";
-import React, { PropsWithChildren } from "react";
-import { createHost, createSlot } from "create-slots";
-import { twMerge } from "tailwind-merge";
 
 type Status = "online" | "wip";
 

@@ -1,12 +1,12 @@
 "use client";
 
-import React, { ReactElement, useState } from "react";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { ReactElement, useState } from "react";
 
 export type CustomTooltipProps = {
   trigger: ReactElement;

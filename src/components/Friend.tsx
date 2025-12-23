@@ -1,9 +1,9 @@
 import styles from "./Friend.module.css";
 
-import { Card } from "./ui/Card";
-import React, { FC, ReactNode } from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/Avatar";
+import { FC, ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
+import { Card } from "./ui/Card";
 
 export interface FriendProps {
   href: string;
