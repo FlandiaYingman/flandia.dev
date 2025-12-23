@@ -67,11 +67,11 @@ const Body = () => (
         <EntryTime>2023 - 2027 (Pursuing)</EntryTime>
         <EntryDetails>
           <p>
-            <i>(As of June 9, 2025)</i>
+            <i>(As of Dec 23, 2025)</i>
           </p>
           <p>
-            Cumulative Grade Average (CGA): 4.179/4.3 <br />
-            Major Cumulative Grade Average (MCGA): 4.209/4.3 <br />
+            Cumulative Grade Average (CGA): 4.196/4.3 <br />
+            Major Cumulative Grade Average (MCGA): 4.216/4.3 <br />
           </p>
           <p>
             Got A+ in <u>all</u> Computer Science courses. <br />
@@ -79,6 +79,31 @@ const Body = () => (
             courses (some are estimation, e.g., highest in most grading
             components). <br />
           </p>
+          <SubEntry>
+            <SubEntryTitle>COMP 4021 Internet Computing</SubEntryTitle>
+            <SubEntryTime>2025-26 Fall</SubEntryTime>
+            <SubEntryBadges>
+              <LightBadge>A+</LightBadge>
+              <LightBadge>1st</LightBadge>
+            </SubEntryBadges>
+          </SubEntry>
+          <SubEntry>
+            <SubEntryTitle>COMP 3721 Theory of Computation</SubEntryTitle>
+            <SubEntryTime>2025-26 Fall</SubEntryTime>
+            <SubEntryBadges>
+              <LightBadge>A+</LightBadge>
+            </SubEntryBadges>
+          </SubEntry>
+          <SubEntry>
+            <SubEntryTitle>
+              COMP 3111H Honors Software Engineering
+            </SubEntryTitle>
+            <SubEntryTime>2025-26 Fall</SubEntryTime>
+            <SubEntryBadges>
+              <LightBadge>A+</LightBadge>
+              <LightBadge>1st</LightBadge>
+            </SubEntryBadges>
+          </SubEntry>
           <SubEntry>
             <SubEntryTitle>COMP 4431 Multimedia Computing</SubEntryTitle>
             <SubEntryTime>2024-25 Spring</SubEntryTime>
