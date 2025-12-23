@@ -2,8 +2,8 @@
 
 /* eslint-disable react/no-unescaped-entities */
 import { Friend, FriendProps } from "@/components/Friend";
-import React, { FC, useMemo } from "react";
 import { shuffle } from "es-toolkit";
+import { FC, useEffect, useState } from "react";
 
 const FriendList: FriendProps[] = [
   {
@@ -112,7 +112,11 @@ const FriendList: FriendProps[] = [
 ];
 
 export const Friends: FC = () => {
-  const friends = useMemo(() => shuffle(FriendList), []);
+  const [friends, setFriends] = useState<typeof FriendList>([]);
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setFriends(shuffle(FriendList));
+  }, []);
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 print:hidden">
       {friends.map((f) => (

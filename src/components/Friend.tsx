@@ -1,5 +1,3 @@
-"use client";
-
 import styles from "./Friend.module.css";
 
 import { Card } from "./ui/Card";
