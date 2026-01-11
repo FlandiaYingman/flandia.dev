@@ -114,6 +114,18 @@ const FriendList: FriendProps[] = [
     avatar:
       "https://avatars.githubusercontent.com/u/182246735?s=400&u=8201c15bdf1680766612714100f171e99781767c&v=4",
   },
+  {
+    href: "https://wyli.is-a.dev/",
+    name: "Dhairya Shah",
+    desc: (
+      <>
+        UG in CS+Elec @ HKUST '29 <br />
+        Flandia underling 🫡. <br />
+        Trying to speedrun uni and life.
+      </>
+    ),
+    avatar: "https://avatars.githubusercontent.com/u/44154103?v=4",
+  },
 ];
 
 export const Friends: FC = () => {
