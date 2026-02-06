@@ -167,3 +167,7 @@ th,
 td {
   @apply px-2 py-1 text-left;
 }
+
+a {
+  @apply underline;
+}

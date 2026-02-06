@@ -61,23 +61,20 @@ const Body = () => (
       <Entry>
         <EntryTitle>Hong Kong University of Science and Technology</EntryTitle>
         <EntrySubtitle>
-          Bachelor of Engineering in Computer Science with an Extended Major in
-          Artificial Intelligence
+          Bachelor of Engineering in Computer Science
         </EntrySubtitle>
-        <EntryTime>2023 - 2027 (Pursuing)</EntryTime>
+        <EntryTime>2023 - 2027</EntryTime>
         <EntryDetails>
+          <p>(As of Jan 1, 2026)</p>
           <p>
-            <i>(As of Dec 23, 2025)</i>
-          </p>
-          <p>
-            Cumulative Grade Average (CGA): 4.196/4.3 <br />
+            Cumulative Grade Average (CGA): 4.205/4.3 <br />
             Major Cumulative Grade Average (MCGA): 4.216/4.3 <br />
           </p>
           <p>
             Got A+ in <u>all</u> Computer Science courses. <br />
-            Got the first place in <u>more than half</u> Computer Science
-            courses (some are estimation, e.g., highest in most grading
-            components). <br />
+            Ranked first in <u>more than half</u> of the Computer Science
+            courses. <br /> (Some are estimates, e.g., highest score in most
+            grading components) <br />
           </p>
           <SubEntry>
             <SubEntryTitle>COMP 4021 Internet Computing</SubEntryTitle>
@@ -209,11 +206,47 @@ const Body = () => (
         <EntryTime>2025-26 Spring</EntryTime>
         <EntryDetails>
           <p>
-            <i>
-              Nominated by HKUST School of Engineering to participate in an
-              exchange program at UPenn in 2025-26 Spring.
-            </i>
+            Nominated by HKUST School of Engineering to participate in an
+            exchange program at UPenn in 2025-26 Spring.
           </p>
+          <SubEntry>
+            <SubEntryTitle>CIS 5450 Big Data Analytics</SubEntryTitle>
+            <SubEntryTime>2025-26 Spring</SubEntryTime>
+            <SubEntryBadges></SubEntryBadges>
+          </SubEntry>
+          <SubEntry>
+            <SubEntryTitle>
+              CIS 4480/5480 Operating Systems Design and Implementation
+            </SubEntryTitle>
+            <SubEntryTime>2025-26 Spring</SubEntryTime>
+            <SubEntryBadges></SubEntryBadges>
+          </SubEntry>
+          <SubEntry>
+            <SubEntryTitle>
+              CIS 3990 Intermediate Computer Systems
+            </SubEntryTitle>
+            <SubEntryTime>2025-26 Spring</SubEntryTime>
+            <SubEntryBadges></SubEntryBadges>
+          </SubEntry>
+          <SubEntry>
+            <SubEntryTitle>
+              CIS 1921 Solving Hard Problems in Practice
+            </SubEntryTitle>
+            <SubEntryTime>2025-26 Spring</SubEntryTime>
+            <SubEntryBadges></SubEntryBadges>
+          </SubEntry>
+          <SubEntry>
+            <SubEntryTitle>CIS 1905 Rust Programming</SubEntryTitle>
+            <SubEntryTime>2025-26 Spring</SubEntryTime>
+            <SubEntryBadges></SubEntryBadges>
+          </SubEntry>
+          <SubEntry>
+            <SubEntryTitle>
+              CIS 1904 Introduction to Haskell Programming
+            </SubEntryTitle>
+            <SubEntryTime>2025-26 Spring</SubEntryTime>
+            <SubEntryBadges></SubEntryBadges>
+          </SubEntry>
         </EntryDetails>
         <EntryDetailsTooltip>Coursework</EntryDetailsTooltip>
       </Entry>
@@ -222,17 +255,12 @@ const Body = () => (
       <SectionTitle>Awards & Achievements</SectionTitle>
       <Entry>
         <EntryTitle>IET Prize 2025</EntryTitle>
-        <EntrySubtitle>
-          <i>IET Hong Kong</i>
-        </EntrySubtitle>
+        <EntrySubtitle>IET Hong Kong</EntrySubtitle>
         <EntryTime>2025-26</EntryTime>
       </Entry>
       <Entry>
         <EntryTitle>Fung Scholarships</EntryTitle>
-        <EntrySubtitle>
-          <i>Victor and William Fung Foundation Limited</i>, and Hong Kong
-          University of Science and Technology
-        </EntrySubtitle>
+        <EntrySubtitle>Victor and William Fung Foundation</EntrySubtitle>
         <EntryTime>2025-26</EntryTime>
       </Entry>
       <Entry>
@@ -263,7 +291,7 @@ const Body = () => (
       </Entry>
       <Entry>
         <EntryTitle>
-          University’s Scholarship Scheme for Continuing Undergraduate Students
+          University's Scholarship Scheme for Continuing Undergraduate Students
         </EntryTitle>
         <EntrySubtitle>
           Hong Kong University of Science and Technology
@@ -275,7 +303,7 @@ const Body = () => (
           HKUST Alumni Endowment Fund High Flyers Program Scholarship
         </EntryTitle>
         <EntrySubtitle>
-          HKUST. Nominated by Department of Computer Science and Engineering
+          Hong Kong University of Science and Technology
         </EntrySubtitle>
         <EntryTime>2023-24</EntryTime>
       </Entry>
@@ -315,18 +343,158 @@ const Body = () => (
       </Entry>
     </Section>
     <Section>
+      <SectionTitle>Research Experiences</SectionTitle>
+      <Entry>
+        <EntryTitle>Undergraduate Research Opportunities Program</EntryTitle>
+        <EntrySubtitle>
+          Programming Language Design and Implementation
+        </EntrySubtitle>
+        <EntryTime>2024-25 Fall, Spring, Summer. 2025-26 Fall</EntryTime>
+        <EntryDescription>
+          <p>
+            This program was supervised by{" "}
+            <a href="https://lptk.github.io/about.html">
+              Prof. Lionel Parreaux
+            </a>
+            . I was mainly working on the programming language and compiler
+            designed and implemented by our lab, called <i>MLscript</i>. In
+            particular, I was working on:
+          </p>
+          <ul>
+            <li>
+              Module System. This is a minimal type system for modules &mdash; a
+              singleton object construct in MLscript where we pose certain
+              restrictions on their usage. This was mainly to support
+              implementing ad hoc polymorphism features later in the compiler,
+              such as type classes (see below). I also tried to formalize the
+              system naively in a type-theoretic way, although I haven't proved
+              any properties about it yet. This system is planned to be
+              deprecated in favor of the flow analysis pass (see below) in the
+              future.
+            </li>
+            <li>
+              Type Classes. A traditional ad hoc polymorphism feature usually
+              found in functional programming languages. This feature was fully
+              based on the module system (see above) and was not based on
+              traditional approaches that rely on type checking and type
+              inference (this choice is due to a design goal of MLscript that
+              compilation should be orthogonal to type checking and type
+              inference).
+            </li>
+            <li>
+              Resolution Pass. A new compiler pass that resolves information of
+              references, selections, and applications of the program without
+              performing a traditional kind of type checking or type inference.
+              This pass effectively bases the module system and type classes
+              features, and also any future ad hoc polymorphism features that
+              require call-site handling.
+            </li>
+            <li>
+              Flow Analysis Pass. A new compiler pass that performs a flow-based
+              analysis on the system to gather and derive more precise
+              information about what values flow to what variables in the
+              program. This pass is planned to effectively replace the module
+              system (see above) to support ad hoc polymorphism features, so
+              that the extra restrictions we put on modules will be no longer
+              required in the future.
+            </li>
+          </ul>
+        </EntryDescription>
+      </Entry>
+      <Entry>
+        <EntryTitle>Undergraduate Research Opportunities Program</EntryTitle>
+        <EntrySubtitle>
+          Commonsense Reasoning with Knowledge Graphs
+        </EntrySubtitle>
+        <EntryTime>2023-24 Summer</EntryTime>
+        <EntryDescription>
+          <p>
+            This program was supervised by{" "}
+            <a href="https://www.cse.ust.hk/~yqsong/">Prof. Yangqiu Song</a> and
+            PhD candidate Zihao Wang. I studied a postgraduate course about
+            graph machine learning, graph neural networks, and knowledge graphs.
+            I participated in a research project about logic reasoning over
+            knowledge graphs, where I gained hands-on experience in the research
+            field.
+          </p>
+        </EntryDescription>
+      </Entry>
+    </Section>
+    <Section>
       <SectionTitle>Work Experiences</SectionTitle>
+      <Entry>
+        <EntryTitle>Independent Work Project</EntryTitle>
+        <EntrySubtitle>CRS Request System</EntrySubtitle>
+        <EntryTime>2025-26 Fall, Winter</EntryTime>
+        <EntryDescription>
+          <p>This project is supervised by Prof. Desmond Tsoi.</p>
+          <ul>
+            <li>
+              Developed a web app that allows students in the department to
+              effectively handle course administration matters, such as making
+              class swapping and absence requests, and assignment deadline
+              extension requests.
+            </li>
+            <li>
+              Designed the backend and frontend architecture with cutting-edge
+              web and software engineering technologies and best practices.
+            </li>
+          </ul>
+          <p>
+            For more information, please visit the project page at{" "}
+            <a href="https://github.com/HKUST-CRS/crs">
+              https://github.com/HKUST-CRS/crs
+            </a>
+            .
+          </p>
+        </EntryDescription>
+      </Entry>
+      <Entry>
+        <EntryTitle>Independent Work Project</EntryTitle>
+        <EntrySubtitle>
+          AI Agents as Dynamic, Adaptive Language Assessors: Building a
+          Patentable App
+        </EntrySubtitle>
+        <EntryTime>2024-25 Spring, 2025-26 Fall</EntryTime>
+        <EntryDescription>
+          <p>
+            This project is supervised by Prof. Desmond Tsoi, in collaboration
+            with Professor Mei Yi Angel Lin from the Education University of
+            Hong Kong.
+          </p>
+          <ul>
+            <li>
+              Developed an innovative app that leverages AI agents to
+              dynamically and adaptively train and assess language skills
+              utilizing large language models' (LLMs) multimodality
+              capabilities.
+            </li>
+            <li>
+              Designed specifically for English learners from Mainland China and
+              Hong Kong, the app understands Mandarin and Cantonese and actively
+              assists users in translating their native language to English
+              during conversations.
+            </li>
+            <li>
+              Adopted user-centric educational philosophies to ensure the app
+              effectively meets the learning needs of its target audience (with
+              the help from Professor Mei Yi Angel Lin).
+            </li>
+          </ul>
+        </EntryDescription>
+      </Entry>
       <Entry>
         <EntryTitle>Department of Computer Science, HKUST</EntryTitle>
         <EntrySubtitle>Undergraduate Teaching Assistant</EntrySubtitle>
         <EntryTime>2023-24 Spring - Now</EntryTime>
         <EntryDescription>
           <p>
-            After performing outstandingly in the computer science courses.
-            Instructors invited me to serve as a undergraduate teaching
-            assistant (UGTA) for the course. As of 2024-25 Summer, I have served
-            as a UGTA for 6 semesters (including Summer and Winter) throughout 3
-            courses (COMP 2011, 2012 and 1023).
+            After I performed outstandingly in computer science courses,
+            instructors invited me to serve as an undergraduate teaching
+            assistant (UGTA). As of 2025-26 Winter, I have served as a UGTA for
+            8 semesters (including Summer and Winter) throughout 3 courses (COMP
+            2011 C++ Programming, 2012 Object-Oriented Programming and Data
+            Structures and 1023 Introduction to Python Programming).
           </p>
           <ul>
             <li>
@@ -339,8 +507,8 @@ const Body = () => (
               advanced topics to students if they are interested.
             </li>
             <li>
-              Writing guides and instructions for students to set-up the
-              programming environment and to debug complex issues in programs.
+              Presenting tutorial sessions to help students better understand
+              the course materials and improve their programming skills.
             </li>
           </ul>
         </EntryDescription>
@@ -353,12 +521,24 @@ const Body = () => (
           <LightBadge>Part Time</LightBadge>
         </EntryBadges>
         <EntryDescription>
-          I developed and implemented an automated software solution utilizing
-          computer vision technology to efficiently process and analyze traffic
-          data, and integrated it with GIS software to enhance data
-          visualization and spatial analysis capabilities. Additionally, I
-          streamlined workflows to improve the accuracy and speed of traffic
-          data processing.
+          <ul>
+            <li>
+              Developed an automated software solution utilizing computer vision
+              technology to efficiently process and analyze traffic data.
+            </li>
+            <li>
+              Integrated the software solution with GIS software to enhance data
+              visualization and spatial analysis capabilities.
+            </li>
+            <li>
+              Performed data analysis on the processed traffic data to extract
+              meaningful information, insights, and patterns.
+            </li>
+            <li>
+              Streamlined workflows to improve the accuracy and speed of traffic
+              data processing.
+            </li>
+          </ul>
         </EntryDescription>
       </Entry>
       <Entry>
@@ -376,8 +556,8 @@ const Body = () => (
           <ul>
             <li>
               Leading the backend team in refactoring the backend server
-              architecture into a containerized microservice architecture, in
-              order to improve performance and maintainability.
+              architecture into a containerized microservice architecture,
+              improving performance and maintainability.
             </li>
             <li>
               Leading the app team in revamping our old apps, migrating them
@@ -387,58 +567,10 @@ const Body = () => (
             <li>
               Leading the team in refactoring the CI/CD workflow of the
               development process of both the backend team and the app team,
-              automatizing, simplifying and improving the efficiency of the
-              integration and deployment / release process.
+              automating, simplifying and improving the efficiency of the
+              integration and deployment/release process.
             </li>
           </ul>
-        </EntryDescription>
-      </Entry>
-    </Section>
-    <Section>
-      <SectionTitle>Research Experiences</SectionTitle>
-      <Entry>
-        <EntryTitle>Independent Work</EntryTitle>
-        <EntrySubtitle>
-          AI Agents as Dynamic, Adaptive Language Assessors: Building a
-          Patentable APP
-        </EntrySubtitle>
-        <EntryTime>2024-25 Spring</EntryTime>
-        <EntryDescription>
-          Supervised by Dr. Desmond Tsoi. This project is currently in a early
-          stage of development.
-        </EntryDescription>
-      </Entry>
-      <Entry>
-        <EntryTitle>Undergraduate Research Opportunities Program</EntryTitle>
-        <EntrySubtitle>
-          Programming Language Design and Implementation
-        </EntrySubtitle>
-        <EntryTime>2024-25 Fall, Spring</EntryTime>
-        <EntryDescription>
-          <p>
-            Supervised by Professor Lionel Parreaux, I implemented the language
-            feature <i>type classes</i> in <i>MLscript</i>, an object-oriented
-            and functional programming language founded and led by Professor
-            Lionel Parreaux. In particular, I implemented:
-          </p>
-          <ul>
-            <li>
-              Functions with <i>multiple parameter lists</i>.
-            </li>
-            <li>
-              <i>Module methods</i>, a type of methods (functions) or methods
-              that require extra handling by compiler on call site.
-            </li>
-            <li>
-              <i>Type classes</i>, including contextual parameters and given
-              instances.
-            </li>
-          </ul>
-          <p>
-            A new pass was being added to the compiler to effectively support
-            the new features. Now, I am continuing working on the new pass to
-            support other features that requires call-site handling.
-          </p>
         </EntryDescription>
       </Entry>
     </Section>
@@ -461,9 +593,10 @@ const Body = () => (
             <DarkBadge>Java</DarkBadge>
             <DarkBadge>Kotlin</DarkBadge>
             <DarkBadge>Scala</DarkBadge>
+            <DarkBadge>Haskell</DarkBadge>
             <DarkBadge>MLscript</DarkBadge>
             <DarkBadge>Golang</DarkBadge>
-            <DarkBadge>C / C++</DarkBadge>
+            <DarkBadge>C/C++</DarkBadge>
             <DarkBadge>HTML</DarkBadge>
             <DarkBadge>CSS</DarkBadge>
             <DarkBadge>JavaScript</DarkBadge>
@@ -476,14 +609,14 @@ const Body = () => (
         <EntryTitle>Libraries / Frameworks / DBMS</EntryTitle>
         <EntryDescription>
           <Badges>
-            <DarkBadge>Spring</DarkBadge>
-            <DarkBadge>Vue</DarkBadge>
+            <DarkBadge>Bun</DarkBadge>
             <DarkBadge>React</DarkBadge>
             <DarkBadge>NumPy</DarkBadge>
-            <DarkBadge>Keras</DarkBadge>
-            <DarkBadge>TensorFlow</DarkBadge>
             <DarkBadge>PostgreSQL</DarkBadge>
             <DarkBadge>React Native</DarkBadge>
+            <DarkBadge>Zod</DarkBadge>
+            <DarkBadge>tRPC</DarkBadge>
+            <DarkBadge>OpenAPI</DarkBadge>
             <DarkBadge>Fastify</DarkBadge>
             <DarkBadge>MongoDB</DarkBadge>
           </Badges>
@@ -495,8 +628,8 @@ const Body = () => (
           <Badges>
             <DarkBadge>Git</DarkBadge>
             <DarkBadge>Linux</DarkBadge>
-            <DarkBadge>Microsoft Word</DarkBadge>
-            <DarkBadge>Microsoft Excel</DarkBadge>
+            <DarkBadge>MS Word</DarkBadge>
+            <DarkBadge>MS Excel</DarkBadge>
             <DarkBadge>LaTeX</DarkBadge>
             <DarkBadge>Typst</DarkBadge>
             <DarkBadge>ChatGPT</DarkBadge>
@@ -538,7 +671,7 @@ const Body = () => (
           </ProjectDescription>
           <ProjectBadges>
             <LightBadge>Side Project</LightBadge>
-            <LightBadge>Next.JS</LightBadge>
+            <LightBadge>Next.js</LightBadge>
             <LightBadge>React</LightBadge>
             <LightBadge>HTML</LightBadge>
             <LightBadge>CSS</LightBadge>
@@ -548,6 +681,26 @@ const Body = () => (
             <LightBadge>Tailwind CSS</LightBadge>
           </ProjectBadges>
           <ProjectLabel>flandia.dev</ProjectLabel>
+        </Project>
+        <Project href="https://github.com/HKUST-CRS/crs">
+          <ProjectTitle>CSE Request System</ProjectTitle>
+          <ProjectDescription>
+            A one-stop platform for students/instructors to handle all
+            course-administrative requests.
+          </ProjectDescription>
+          <ProjectBadges>
+            <LightBadge>Bun</LightBadge>
+            <LightBadge>TypeScript</LightBadge>
+            <LightBadge>Zod</LightBadge>
+            <LightBadge>tRPC</LightBadge>
+            <LightBadge>MongoDB</LightBadge>
+            <LightBadge>React</LightBadge>
+            <LightBadge>Next.js</LightBadge>
+            <LightBadge>shadcn/ui</LightBadge>
+            <LightBadge>Tailwind CSS</LightBadge>
+            <LightBadge>Docker</LightBadge>
+          </ProjectBadges>
+          <ProjectLabel>github.com/HKUST-CRS/crs</ProjectLabel>
         </Project>
       </ProjectCards>
     </Section>
