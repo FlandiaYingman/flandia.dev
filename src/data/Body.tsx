@@ -402,7 +402,7 @@ const Body = () => (
         </EntryDescription>
       </Entry>
       <Entry>
-        <EntryTitle>Undergraduate Research Opportunities Program</EntryTitle>
+        <EntryTitle>Undergraduate Research Opportunities Program (Tasting Stream)</EntryTitle>
         <EntrySubtitle>
           Commonsense Reasoning with Knowledge Graphs
         </EntrySubtitle>
