@@ -5,7 +5,7 @@ import { str } from "@/lib/utils";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "LI, Yu Hong Harry | 李裕康",
+  title: "Harry Li | 李裕康",
   description: str(
     <>
       Enthusiastic software developer with experience in developing and
