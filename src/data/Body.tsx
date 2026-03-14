@@ -65,16 +65,17 @@ const Body = () => (
         </EntrySubtitle>
         <EntryTime>2023 - 2027</EntryTime>
         <EntryDetails>
-          <p>(As of Jan 1, 2026)</p>
+          <p>(As of March 13, 2026)</p>
           <p>
-            Cumulative Grade Average (CGA): 4.205/4.3 <br />
+            Cumulative Grade Average (CGA): 4.211/4.3 <br />
             Major Cumulative Grade Average (MCGA): 4.216/4.3 <br />
+            Class Rank: 1/170 <br />
           </p>
           <p>
             Got A+ in <u>all</u> Computer Science courses. <br />
-            Ranked first in <u>more than half</u> of the Computer Science
-            courses. <br /> (Some are estimates, e.g., highest score in most
-            grading components) <br />
+            Ranked 1st in <u>more than half</u> of the Computer Science courses.{" "}
+            <br /> (Some are estimates, e.g., highest score in most grading
+            components) <br />
           </p>
           <SubEntry>
             <SubEntryTitle>COMP 4021 Internet Computing</SubEntryTitle>
@@ -402,7 +403,9 @@ const Body = () => (
         </EntryDescription>
       </Entry>
       <Entry>
-        <EntryTitle>Undergraduate Research Opportunities Program (Tasting Stream)</EntryTitle>
+        <EntryTitle>
+          Undergraduate Research Opportunities Program (Tasting Stream)
+        </EntryTitle>
         <EntrySubtitle>
           Commonsense Reasoning with Knowledge Graphs
         </EntrySubtitle>
