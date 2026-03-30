@@ -1,11 +1,8 @@
-/* eslint-disable react/no-unescaped-entities */
-import { CustomTooltip } from "@/components/custom-tooltip";
 import {
   Entry,
   EntryBadges,
   EntryDescription,
   EntryDetails,
-  EntryDetailsTooltip,
   EntrySubtitle,
   EntryTime,
   EntryTitle,
@@ -24,37 +21,18 @@ import {
   SubEntryTime,
   SubEntryTitle,
 } from "@/components/sub-entry";
-import { Badges, DarkBadge, LightBadge } from "@/components/ui/Badge";
-import { Section, SectionText, SectionTitle } from "@/components/ui/Section";
+import { Badges, DarkBadge, LightBadge } from "@/components/ui/badge";
+import { md } from "@/components/ui/rich-content";
+import { Section, SectionText, SectionTitle } from "@/components/ui/section";
 import { Friends } from "@/data/Friends";
 
 const Body = () => (
   <>
     <Section>
       <SectionTitle>About</SectionTitle>
-      <SectionText>
-        I am highly interested in various fields in computer science,
-        particularly in{" "}
-        <CustomTooltip
-          trigger={
-            <u>
-              <i>theoretical computer science (theory B)</i>
-            </u>
-          }
-          content={
-            <>
-              Logic, Semantics and Automata;
-              <br />
-              Formal Models and Rewriting Systems;
-              <br />
-              Theory of Programming Languages.
-            </>
-          }
-        />
-        . I am methodically experienced in developing and maintaining
-        client/server apps and websites. I am also experienced in and currently
-        exploring more about data mining, manipulation and visualization.
-      </SectionText>
+      <SectionText>{md`
+        I am highly interested in various fields in computer science, particularly in theoretical computer science (theory B). I am methodically experienced in developing and maintaining client/server apps and websites. I am also experienced in and currently exploring more about data mining, manipulation and visualization.
+      `}</SectionText>
     </Section>
     <Section>
       <SectionTitle>Education</SectionTitle>
@@ -65,18 +43,16 @@ const Body = () => (
         </EntrySubtitle>
         <EntryTime>2023 - 2027</EntryTime>
         <EntryDetails>
-          <p>(As of March 13, 2026)</p>
-          <p>
-            Cumulative Grade Average (CGA): 4.211/4.3 <br />
-            Major Cumulative Grade Average (MCGA): 4.216/4.3 <br />
-            Class Rank: 1/170 <br />
-          </p>
-          <p>
-            Got A+ in <u>all</u> Computer Science courses. <br />
-            Ranked 1st in <u>more than half</u> of the Computer Science courses.{" "}
-            <br /> (Some are estimates, e.g., highest score in most grading
-            components) <br />
-          </p>
+          {md`
+            (As of March 13, 2026)
+
+            Cumulative Grade Average (CGA): 4.211/4.3
+            Major Cumulative Grade Average (MCGA): 4.216/4.3
+            Class Rank: 1/170
+
+            Got A+ in **all** Computer Science courses.
+            Ranked 1st in **more than half** of the Computer Science courses.
+          `}
           <SubEntry>
             <SubEntryTitle>COMP 4021 Internet Computing</SubEntryTitle>
             <SubEntryTime>2025-26 Fall</SubEntryTime>
@@ -199,17 +175,15 @@ const Body = () => (
             </SubEntryBadges>
           </SubEntry>
         </EntryDetails>
-        <EntryDetailsTooltip>Coursework</EntryDetailsTooltip>
       </Entry>
       <Entry>
         <EntryTitle>University of Pennsylvania</EntryTitle>
         <EntrySubtitle>Exchange Program in Engineering School</EntrySubtitle>
         <EntryTime>2025-26 Spring</EntryTime>
         <EntryDetails>
-          <p>
-            Nominated by HKUST School of Engineering to participate in an
-            exchange program at UPenn in 2025-26 Spring.
-          </p>
+          {md`
+            Nominated by HKUST School of Engineering to participate in an exchange program at UPenn in 2025-26 Spring.
+          `}
           <SubEntry>
             <SubEntryTitle>CIS 5450 Big Data Analytics</SubEntryTitle>
             <SubEntryTime>2025-26 Spring</SubEntryTime>
@@ -249,7 +223,6 @@ const Body = () => (
             <SubEntryBadges></SubEntryBadges>
           </SubEntry>
         </EntryDetails>
-        <EntryDetailsTooltip>Coursework</EntryDetailsTooltip>
       </Entry>
     </Section>
     <Section>
@@ -349,17 +322,9 @@ const Body = () => (
         <EntryTitle>Research Internship</EntryTitle>
         <EntrySubtitle>Opal Extension</EntrySubtitle>
         <EntryTime>2025-26 Spring (ongoing)</EntryTime>
-        <EntryDescription>
-          <p>
-            This program is advised by{" "}
-            <a href="https://obastani.github.io/">Prof. Osbert Bastani</a> and{" "}
-            <a href="https://mell.ac/">Stephen Mell</a>. I am mainly working on
-            extensions on the paper{" "}
-            <a href="https://arxiv.org/pdf/2405.11361.pdf">
-              Opportunistically Parallel Lambda Calculus
-            </a>, nicknamed Opal. 
-          </p>
-        </EntryDescription>
+        <EntryDescription>{md`
+          This program is advised by [Prof. Osbert Bastani](https://obastani.github.io/) and [Stephen Mell](https://mell.ac/). I am mainly working on extensions on the paper [Opportunistically Parallel Lambda Calculus](https://arxiv.org/pdf/2405.11361.pdf), nicknamed Opal.
+        `}</EntryDescription>
       </Entry>
       <Entry>
         <EntryTitle>Undergraduate Research Opportunities Program</EntryTitle>
@@ -367,56 +332,14 @@ const Body = () => (
           Programming Language Design and Implementation
         </EntrySubtitle>
         <EntryTime>2024-25 Fall, Spring, Summer. 2025-26 Fall</EntryTime>
-        <EntryDescription>
-          <p>
-            This program was supervised by{" "}
-            <a href="https://lptk.github.io/about.html">
-              Prof. Lionel Parreaux
-            </a>
-            . I was mainly working on the programming language and compiler
-            designed and implemented by our lab, called <i>MLscript</i>. In
-            particular, I was working on:
-          </p>
-          <ul>
-            <li>
-              Module System. This is a minimal type system for modules &mdash; a
-              singleton object construct in MLscript where we pose certain
-              restrictions on their usage. This was mainly to support
-              implementing ad hoc polymorphism features later in the compiler,
-              such as type classes (see below). I also tried to formalize the
-              system naively in a type-theoretic way, although I haven't proved
-              any properties about it yet. This system is planned to be
-              deprecated in favor of the flow analysis pass (see below) in the
-              future.
-            </li>
-            <li>
-              Type Classes. A traditional ad hoc polymorphism feature usually
-              found in functional programming languages. This feature was fully
-              based on the module system (see above) and was not based on
-              traditional approaches that rely on type checking and type
-              inference (this choice is due to a design goal of MLscript that
-              compilation should be orthogonal to type checking and type
-              inference).
-            </li>
-            <li>
-              Resolution Pass. A new compiler pass that resolves information of
-              references, selections, and applications of the program without
-              performing a traditional kind of type checking or type inference.
-              This pass effectively bases the module system and type classes
-              features, and also any future ad hoc polymorphism features that
-              require call-site handling.
-            </li>
-            <li>
-              Flow Analysis Pass. A new compiler pass that performs a flow-based
-              analysis on the system to gather and derive more precise
-              information about what values flow to what variables in the
-              program. This pass is planned to effectively replace the module
-              system (see above) to support ad hoc polymorphism features, so
-              that the extra restrictions we put on modules will be no longer
-              required in the future.
-            </li>
-          </ul>
-        </EntryDescription>
+        <EntryDescription>{md`
+          This program was supervised by [Prof. Lionel Parreaux](https://lptk.github.io/about.html). I was mainly working on the programming language and compiler designed and implemented by our lab, called _MLscript_. In particular, I was working on:
+
+          - Module System. This is a minimal type system for modules - a singleton object construct in MLscript where we pose certain restrictions on their usage. This was mainly to support implementing ad hoc polymorphism features later in the compiler, such as type classes (see below). I also tried to formalize the system naively in a type-theoretic way, although I haven't proved any properties about it yet. This system is planned to be deprecated in favor of the flow analysis pass (see below) in the future.
+          - Type Classes. A traditional ad hoc polymorphism feature usually found in functional programming languages. This feature was fully based on the module system (see above) and was not based on traditional approaches that rely on type checking and type inference (this choice is due to a design goal of MLscript that compilation should be orthogonal to type checking and type inference).
+          - Resolution Pass. A new compiler pass that resolves information of references, selections, and applications of the program without performing a traditional kind of type checking or type inference. This pass effectively bases the module system and type classes features, and also any future ad hoc polymorphism features that require call-site handling.
+          - Flow Analysis Pass. A new compiler pass that performs a flow-based analysis on the system to gather and derive more precise information about what values flow to what variables in the program. This pass is planned to effectively replace the module system (see above) to support ad hoc polymorphism features, so that the extra restrictions we put on modules will be no longer required in the future.
+        `}</EntryDescription>
       </Entry>
       <Entry>
         <EntryTitle>
@@ -426,17 +349,9 @@ const Body = () => (
           Commonsense Reasoning with Knowledge Graphs
         </EntrySubtitle>
         <EntryTime>2023-24 Summer</EntryTime>
-        <EntryDescription>
-          <p>
-            This program was supervised by{" "}
-            <a href="https://www.cse.ust.hk/~yqsong/">Prof. Yangqiu Song</a> and
-            PhD candidate Zihao Wang. I studied a postgraduate course about
-            graph machine learning, graph neural networks, and knowledge graphs.
-            I participated in a research project about logic reasoning over
-            knowledge graphs, where I gained hands-on experience in the research
-            field.
-          </p>
-        </EntryDescription>
+        <EntryDescription>{md`
+          This program was supervised by [Prof. Yangqiu Song](https://www.cse.ust.hk/~yqsong/) and PhD candidate Zihao Wang. I studied a postgraduate course about graph machine learning, graph neural networks, and knowledge graphs. I participated in a research project about logic reasoning over knowledge graphs, where I gained hands-on experience in the research field.
+        `}</EntryDescription>
       </Entry>
     </Section>
     <Section>
@@ -445,28 +360,14 @@ const Body = () => (
         <EntryTitle>Independent Work Project</EntryTitle>
         <EntrySubtitle>CRS Request System</EntrySubtitle>
         <EntryTime>2025-26 Fall, Winter</EntryTime>
-        <EntryDescription>
-          <p>This project is supervised by Prof. Desmond Tsoi.</p>
-          <ul>
-            <li>
-              Developed a web app that allows students in the department to
-              effectively handle course administration matters, such as making
-              class swapping and absence requests, and assignment deadline
-              extension requests.
-            </li>
-            <li>
-              Designed the backend and frontend architecture with cutting-edge
-              web and software engineering technologies and best practices.
-            </li>
-          </ul>
-          <p>
-            For more information, please visit the project page at{" "}
-            <a href="https://github.com/HKUST-CRS/crs">
-              https://github.com/HKUST-CRS/crs
-            </a>
-            .
-          </p>
-        </EntryDescription>
+        <EntryDescription>{md`
+          This project is supervised by Prof. Desmond Tsoi.
+
+          - Developed a web app that allows students in the department to effectively handle course administration matters, such as making class swapping and absence requests, and assignment deadline extension requests.
+          - Designed the backend and frontend architecture with cutting-edge web and software engineering technologies and best practices.
+
+          For more information, please visit the project page at [github.com/HKUST-CRS/crs](https://github.com/HKUST-CRS/crs).
+        `}</EntryDescription>
       </Entry>
       <Entry>
         <EntryTitle>Independent Work Project</EntryTitle>
@@ -475,62 +376,25 @@ const Body = () => (
           Patentable App
         </EntrySubtitle>
         <EntryTime>2024-25 Spring, 2025-26 Fall</EntryTime>
-        <EntryDescription>
-          <p>
-            This project is supervised by Prof. Desmond Tsoi, in collaboration
-            with Professor Mei Yi Angel Lin from the Education University of
-            Hong Kong.
-          </p>
-          <ul>
-            <li>
-              Developed an innovative app that leverages AI agents to
-              dynamically and adaptively train and assess language skills
-              utilizing large language models' (LLMs) multimodality
-              capabilities.
-            </li>
-            <li>
-              Designed specifically for English learners from Mainland China and
-              Hong Kong, the app understands Mandarin and Cantonese and actively
-              assists users in translating their native language to English
-              during conversations.
-            </li>
-            <li>
-              Adopted user-centric educational philosophies to ensure the app
-              effectively meets the learning needs of its target audience (with
-              the help from Professor Mei Yi Angel Lin).
-            </li>
-          </ul>
-        </EntryDescription>
+        <EntryDescription>{md`
+          This project is supervised by Prof. Desmond Tsoi, in collaboration with Professor Mei Yi Angel Lin from the Education University of Hong Kong.
+
+          - Developed an innovative app that leverages AI agents to dynamically and adaptively train and assess language skills utilizing large language models' (LLMs) multimodality capabilities.
+          - Designed specifically for English learners from Mainland China and Hong Kong, the app understands Mandarin and Cantonese and actively assists users in translating their native language to English during conversations.
+          - Adopted user-centric educational philosophies to ensure the app effectively meets the learning needs of its target audience (with the help from Professor Mei Yi Angel Lin).
+        `}</EntryDescription>
       </Entry>
       <Entry>
         <EntryTitle>Department of Computer Science, HKUST</EntryTitle>
         <EntrySubtitle>Undergraduate Teaching Assistant</EntrySubtitle>
         <EntryTime>2023-24 Spring - Now</EntryTime>
-        <EntryDescription>
-          <p>
-            After I performed outstandingly in computer science courses,
-            instructors invited me to serve as an undergraduate teaching
-            assistant (UGTA). As of 2025-26 Winter, I have served as a UGTA for
-            8 semesters (including Summer and Winter) throughout 3 courses (COMP
-            2011 C++ Programming, 2012 Object-Oriented Programming and Data
-            Structures and 1023 Introduction to Python Programming).
-          </p>
-          <ul>
-            <li>
-              Assisting instructors in preparing course materials, including
-              assignments, tutorial notes, lecture notes and self-tests.
-            </li>
-            <li>
-              Answering students' questions and providing guidance on lecture
-              materials, assignments, environment set-up, as well as introducing
-              advanced topics to students if they are interested.
-            </li>
-            <li>
-              Presenting tutorial sessions to help students better understand
-              the course materials and improve their programming skills.
-            </li>
-          </ul>
-        </EntryDescription>
+        <EntryDescription>{md`
+          After I performed outstandingly in computer science courses, instructors invited me to serve as an undergraduate teaching assistant (UGTA). As of 2025-26 Winter, I have served as a UGTA for 8 semesters (including Summer and Winter) throughout 3 courses (COMP 2011 C++ Programming, 2012 Object-Oriented Programming and Data Structures and 1023 Introduction to Python Programming).
+
+          - Assisting instructors in preparing course materials, including assignments, tutorial notes, lecture notes and self-tests.
+          - Answering students' questions and providing guidance on lecture materials, assignments, environment set-up, as well as introducing advanced topics to students if they are interested.
+          - Presenting tutorial sessions to help students better understand the course materials and improve their programming skills.
+        `}</EntryDescription>
       </Entry>
       <Entry>
         <EntryTitle>GREAT Smart Cities Institute, HKUST</EntryTitle>
@@ -539,26 +403,12 @@ const Body = () => (
         <EntryBadges>
           <LightBadge>Part Time</LightBadge>
         </EntryBadges>
-        <EntryDescription>
-          <ul>
-            <li>
-              Developed an automated software solution utilizing computer vision
-              technology to efficiently process and analyze traffic data.
-            </li>
-            <li>
-              Integrated the software solution with GIS software to enhance data
-              visualization and spatial analysis capabilities.
-            </li>
-            <li>
-              Performed data analysis on the processed traffic data to extract
-              meaningful information, insights, and patterns.
-            </li>
-            <li>
-              Streamlined workflows to improve the accuracy and speed of traffic
-              data processing.
-            </li>
-          </ul>
-        </EntryDescription>
+        <EntryDescription>{md`
+          - Developed an automated software solution utilizing computer vision technology to efficiently process and analyze traffic data.
+          - Integrated the software solution with GIS software to enhance data visualization and spatial analysis capabilities.
+          - Performed data analysis on the processed traffic data to extract meaningful information, insights, and patterns.
+          - Streamlined workflows to improve the accuracy and speed of traffic data processing.
+        `}</EntryDescription>
       </Entry>
       <Entry>
         <EntryTitle>USThing</EntryTitle>
@@ -568,29 +418,13 @@ const Body = () => (
           <LightBadge>Core Member</LightBadge>
           <LightBadge>Voluntary</LightBadge>
         </EntryBadges>
-        <EntryDescription>
-          USThing is a student-developed all-in-one app for HKUST. The team
-          consists of passionate and talented students who work towards
-          continually improving the app and the HKUST student community.
-          <ul>
-            <li>
-              Leading the backend team in refactoring the backend server
-              architecture into a containerized microservice architecture,
-              improving performance and maintainability.
-            </li>
-            <li>
-              Leading the app team in revamping our old apps, migrating them
-              from old native apps for Android and iOS, respectively, into one
-              app built with React Native technology.
-            </li>
-            <li>
-              Leading the team in refactoring the CI/CD workflow of the
-              development process of both the backend team and the app team,
-              automating, simplifying and improving the efficiency of the
-              integration and deployment/release process.
-            </li>
-          </ul>
-        </EntryDescription>
+        <EntryDescription>{md`
+          USThing is a student-developed all-in-one app for HKUST. The team consists of passionate and talented students who work towards continually improving the app and the HKUST student community.
+
+          - Leading the backend team in refactoring the backend server architecture into a containerized microservice architecture, improving performance and maintainability.
+          - Leading the app team in revamping our old apps, migrating them from old native apps for Android and iOS, respectively, into one app built with React Native technology.
+          - Leading the team in refactoring the CI/CD workflow of the development process of both the backend team and the app team, automating, simplifying and improving the efficiency of the integration and deployment/release process.
+        `}</EntryDescription>
       </Entry>
     </Section>
     <Section>

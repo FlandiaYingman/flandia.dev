@@ -101,6 +101,7 @@
 }
 
 .print-force-new-page {
+  break-before: page;
   page-break-before: always;
 }
 
@@ -112,9 +113,13 @@
 
   html {
     font-size: 9pt;
+    print-color-adjust: exact !important;
   }
 
   main {
+    max-width: none !important;
+    width: auto !important;
+    margin: 0 auto !important;
     padding: 0 !important;
   }
 }

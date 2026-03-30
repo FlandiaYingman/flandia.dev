@@ -1,28 +1,30 @@
-import { Button } from "@/components/ui/Button";
-import TheAvatar from "@/data/TheAvatar";
 import {
   SiGithub,
   SiInstagram,
   SiThreads,
 } from "@icons-pack/react-simple-icons";
-import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
+import { GlobeIcon, MailIcon } from "lucide-react";
 import { createElement, FC, PropsWithChildren } from "react";
+
+import { Button } from "@/components/ui/button";
+import TheAvatar from "@/data/TheAvatar";
 
 const Name = ({ children }: PropsWithChildren) => (
   <h1 className="text-2xl font-bold">{children}</h1>
 );
 
 const About = ({ children }: PropsWithChildren) => (
-  <div className="text-muted-foreground max-w-xl font-mono text-sm text-pretty">
+  <div className="max-w-xl font-mono text-sm text-pretty text-muted-foreground">
     {children}
   </div>
 );
 
 const Location = ({ href, children }: PropsWithChildren<{ href: string }>) => (
-  <p className="text-muted-foreground max-w-md items-center font-mono text-xs text-pretty">
+  <p className="max-w-md items-center font-mono text-xs text-pretty text-muted-foreground">
     <a
       className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
       href={href}
+      rel="noreferrer"
       target="_blank"
     >
       <GlobeIcon className="h-3 w-3" />
@@ -47,6 +49,7 @@ type SocialProps = {
 
 const Social = (props: SocialProps) => {
   const { url, icon } = props;
+
   return (
     <>
       <Button
@@ -55,7 +58,7 @@ const Social = (props: SocialProps) => {
         size="icon"
         asChild
       >
-        <a href={url} target="_blank">
+        <a href={url} rel="noreferrer" target="_blank">
           {createElement(icon, { className: "h-4 w-4" })}
         </a>
       </Button>
@@ -70,7 +73,7 @@ const Social = (props: SocialProps) => {
 };
 
 const Socials = ({ children }: PropsWithChildren) => (
-  <div className="text-muted-foreground flex flex-row flex-wrap gap-x-1 gap-y-1 pt-1 font-mono text-sm">
+  <div className="flex flex-row flex-wrap gap-x-1 gap-y-1 pt-1 font-mono text-sm text-muted-foreground">
     {children}
   </div>
 );
@@ -94,10 +97,6 @@ const Head = () => (
           Enthusiastic learner and developer, passionate about learning new
           theories, practices and methodologies through intuition and hands-on
           experiences.
-          <blockquote>Work hard. Play hard.</blockquote>
-          <blockquote>
-            Humans pursue knowledge not to surpass others.
-          </blockquote>
         </About>
         <Location href="https://maps.app.goo.gl/YZuY7rM4Mf9mvP9i8">
           HKUST, Hong Kong SAR
@@ -107,12 +106,6 @@ const Head = () => (
             url={"mailto:me@flandia.dev"}
             icon={MailIcon}
             label="me@flandia.dev"
-          />
-          <Social
-            url="tel:+852-8403-0974"
-            icon={PhoneIcon}
-            label="+852 8403 0974"
-            labelPrefix="TEL: "
           />
           <Social
             url="https://github.com/FlandiaYingman"

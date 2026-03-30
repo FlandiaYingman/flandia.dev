@@ -1,0 +1,10 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "ignorePatterns": [".next/**", "node_modules/**"],
+  "printWidth": 80,
+  "sortImports": {},
+  "sortTailwindcss": {
+    "functions": ["cn", "cva", "twMerge"],
+    "stylesheet": "./src/app/globals.css"
+  }
+}

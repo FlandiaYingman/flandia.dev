@@ -1,5 +1,7 @@
-import { cn } from "@/lib/utils";
 import React, { PropsWithChildren } from "react";
+
+import { RichContent } from "@/components/ui/rich-content";
+import { cn } from "@/lib/utils";
 
 export interface SectionProps extends React.HTMLAttributes<HTMLDivElement> {
   newPage?: boolean;
@@ -10,6 +12,7 @@ export function Section({
   className,
   newPage,
   hiddenPrint,
+  children,
   ...props
 }: SectionProps) {
   return (
@@ -21,14 +24,26 @@ export function Section({
         hiddenPrint && "print:hidden",
       )}
       {...props}
-    />
+    >
+      {children}
+    </section>
   );
 }
 
 export function SectionTitle(props: PropsWithChildren<{}>) {
-  return <h2 className="text-xl font-bold break-after-avoid" {...props} />;
+  const { children, ...rest } = props;
+  return (
+    <h2 className="break-after-avoid text-xl font-bold" {...rest}>
+      {children}
+    </h2>
+  );
 }
 
 export function SectionText(props: PropsWithChildren<{}>) {
-  return <p className="text-pretty font-mono text-sm" {...props} />;
+  const { children, ...rest } = props;
+  return (
+    <div className="font-mono text-sm text-pretty" {...rest}>
+      <RichContent>{children}</RichContent>
+    </div>
+  );
 }

@@ -1,142 +1,113 @@
 "use client";
-
-/* eslint-disable react/no-unescaped-entities */
-import { Friend, FriendProps } from "@/components/Friend";
 import { shuffle } from "es-toolkit";
-import { FC, useEffect, useState } from "react";
+import { FC, startTransition, useEffect, useState } from "react";
+
+import { Friend, FriendProps } from "@/components/Friend";
+import { md } from "@/components/ui/rich-content";
 
 const FriendList: FriendProps[] = [
   {
     href: "https://frankchen0205.github.io/",
     name: "Ruiping Chen",
-    desc: (
-      <>
-        UG in DS. @ HKUST '27 <br />
-        Exchange @ ETH Zurich <br />
-        Research Interest: <br />
-        <i>He doesn't know either.</i> 😛
-      </>
-    ),
+    desc: md`
+      UG in DS. @ HKUST '27
+      Exchange @ ETH Zurich
+      Research Interest:
+      _He doesn't know either._ 😛
+    `,
     avatar: "https://frankchen0205.github.io/selfie.jpg",
   },
   {
     href: "https://yzhanglp.com/",
     name: "Yuhao Zhang",
-    desc: (
-      <>
-        UG in CS+Math @ HKUST '25 <br />
-        PhD in CS @ IC <br />
-        3D Computer Vision and Generation Model 😎
-      </>
-    ),
+    desc: md`
+      UG in CS+Math @ HKUST '25
+      PhD in CS @ IC
+      3D Computer Vision and Generation Model 😎
+    `,
     avatar: "https://yzhanglp.com/images/profile.png",
   },
   {
     href: "https://matheart.github.io/",
     name: "Matheart",
-    desc: (
-      <>
-        UG in CS+Math @ HKUST '25 <br />
-        PhD in CS+Stats @ UPenn <br />
-        Theory and Empirical Science of Deep Learning and LLMs 🥺
-      </>
-    ),
+    desc: md`
+      UG in CS+Math @ HKUST '25
+      PhD in CS+Stats @ UPenn
+      Theory and Empirical Science of Deep Learning and LLMs 🥺
+    `,
     avatar: "https://matheart.github.io/images/profile_blue.png",
   },
   {
     href: "https://galvingao.com/",
     name: "Galvin Gao",
-    desc: (
-      <>
-        Co-founder & Core Maintainer of&nbsp;
-        <a href="https://penguin-stats.io/">Penguin Statistics</a>... and more!
-        🥰
-      </>
-    ),
+    desc: md`
+      Co-founder & Core Maintainer of [Penguin Statistics](https://penguin-stats.io/)... and more! 🥰
+    `,
     avatar:
       "https://galvingao.com/content/images/2022/04/avatar-2dim-circle_512x512.png",
   },
   {
     href: "https://github.com/LeoZhu6",
     name: "Leo Zhu",
-    desc: (
-      <>
-        UG in ... IDK @ HKUST '29 <br />
-        Funny science student who claims to be from the business school 🐽
-      </>
-    ),
+    desc: md`
+      UG in ... IDK @ HKUST '29
+      Funny science student who claims to be from the business school 🐽
+    `,
     avatar: "https://avatars.githubusercontent.com/u/142682002?v=4",
   },
   {
     href: "https://www.markng.com/",
     name: "Mark Ng",
-    desc: (
-      <>
-        PhD in CS @ HKUST <br />
-        PL & Compiler. Oh no! His{" "}
-        <u>
-          <i>
-            <b>top-quality</b>
-          </i>
-        </u>{" "}
-        <a href="https://github.com/hkust-taco/mlscript/pull/266">lifter</a>{" "}
-        breaks my{" "}
-        <a href="https://github.com/hkust-taco/mlscript/pull/343">PR</a> again.
-        🤧
-      </>
-    ),
+    desc: md`
+      PhD in CS @ HKUST
+      PL & Compiler. Oh no! His **_top-quality_** [lifter](https://github.com/hkust-taco/mlscript/pull/266) breaks my [PR](https://github.com/hkust-taco/mlscript/pull/343) again. 🤧
+    `,
     avatar: "https://avatars.githubusercontent.com/u/55091936?v=4",
   },
   {
     href: "https://kf8311.github.io/",
     name: "Bosco Lam",
-    desc: (
-      <>
-        UG in COMP @ HKUST '28 <br />
-        MyGO Mujica 😨.
-        <br />
-        Also checkout{" "}
-        <a href="https://www.facebook.com/profile.php?id=100077715879412">
-          KD Workshop
-        </a>{" "}
-        if you know OMSI 2. 🚍
-      </>
-    ),
+    desc: md`
+      UG in COMP @ HKUST '28
+      MyGO Mujica 😨.
+      Also checkout [KD Workshop](https://www.facebook.com/profile.php?id=100077715879412) if you know OMSI 2. 🚍
+    `,
     avatar:
       "https://avatars.githubusercontent.com/u/182246735?s=400&u=8201c15bdf1680766612714100f171e99781767c&v=4",
   },
   {
     href: "https://wyli.is-a.dev/",
     name: "Dhairya Shah",
-    desc: (
-      <>
-        UG in CS+ELEC @ HKUST '29 <br />
-        Flandia underling 🫡. <br />
-        Trying to speedrun uni and life.
-      </>
-    ),
+    desc: md`
+      UG in CS+ELEC @ HKUST '29
+      Flandia underling 🫡.
+      Trying to speedrun uni and life.
+    `,
     avatar: "https://avatars.githubusercontent.com/u/44154103?v=4",
   },
   {
     href: "https://sites.google.com/view/chenyueasmsubmission/",
     name: "Frankie Chen",
-    desc: (
-      <>
-        UG in ECON @ HKUST '26 <br />
-        MA in ECON @ UChicago '27 <br />
-        My best ever roommate ❤️
-      </>
-    ),
-    avatar: "https://github.com/user-attachments/assets/74cf7387-ab35-43a2-bd67-e2a2926777e0",
+    desc: md`
+      UG in ECON @ HKUST '26
+      MA in ECON @ UChicago '27
+      My best ever roommate ❤️
+    `,
+    avatar:
+      "https://github.com/user-attachments/assets/74cf7387-ab35-43a2-bd67-e2a2926777e0",
   },
 ];
 
 export const Friends: FC = () => {
   const [friends, setFriends] = useState<typeof FriendList>([]);
+
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setFriends(shuffle(FriendList));
+    // Shuffle after hydration so the static HTML stays deterministic.
+    startTransition(() => {
+      setFriends(shuffle(FriendList));
+    });
   }, []);
+
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 print:hidden">
       {friends.map((f) => (
@@ -145,15 +116,11 @@ export const Friends: FC = () => {
       <Friend
         href="https://github.com/FlandiaYingman/flandia.dev/pulls"
         name="Friends..."
-        desc={
-          <>
-            Create a PR on this section for friendship! <br />
-            <span className="text-gray-500">
-              no idea about a PR? <br />
-              create an issue plz 🤡
-            </span>
-          </>
-        }
+        desc={md`
+          Create a PR on this section for friendship!
+
+          _No idea about a PR? Create an issue plz 🤡_
+        `}
         initials="PR"
       />
     </div>

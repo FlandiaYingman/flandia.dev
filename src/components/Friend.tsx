@@ -1,9 +1,12 @@
-import styles from "./Friend.module.css";
-
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/Avatar";
 import { FC, ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
-import { Card } from "./ui/Card";
+
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { RichContent } from "@/components/ui/rich-content";
+
+import { Card } from "./ui/card";
+
+import styles from "./Friend.module.css";
 
 export interface FriendProps {
   href: string;
@@ -33,14 +36,15 @@ export const Friend: FC<FriendProps> = (props) => {
       </Avatar>
       <a
         href={href}
+        rel="noreferrer"
         target="_blank"
         className="inline-flex font-semibold hover:underline"
       >
         {name}
       </a>
-      <span className={twMerge("text-center font-mono text-xs", styles.desc)}>
-        {desc}
-      </span>
+      <div className={twMerge("text-center font-mono text-xs", styles.desc)}>
+        <RichContent>{desc}</RichContent>
+      </div>
     </Card>
   );
 };
