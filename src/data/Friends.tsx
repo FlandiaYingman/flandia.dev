@@ -126,6 +126,18 @@ const FriendList: FriendProps[] = [
     ),
     avatar: "https://avatars.githubusercontent.com/u/44154103?v=4",
   },
+  {
+    href: "https://sites.google.com/view/chenyueasmsubmission/",
+    name: "Frankie Chen",
+    desc: (
+      <>
+        UG in ECON @ HKUST '26 <br />
+        MA in ECON @ UChicago '27 <br />
+        My best ever roommate ❤️
+      </>
+    ),
+    avatar: "https://github.com/user-attachments/assets/74cf7387-ab35-43a2-bd67-e2a2926777e0",
+  },
 ];
 
 export const Friends: FC = () => {
