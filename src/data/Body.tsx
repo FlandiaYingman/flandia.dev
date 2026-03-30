@@ -346,6 +346,22 @@ const Body = () => (
     <Section>
       <SectionTitle>Research Experiences</SectionTitle>
       <Entry>
+        <EntryTitle>Research Internship</EntryTitle>
+        <EntrySubtitle>Opal Extension</EntrySubtitle>
+        <EntryTime>2025-26 Spring (ongoing)</EntryTime>
+        <EntryDescription>
+          <p>
+            This program is advised by{" "}
+            <a href="https://obastani.github.io/">Prof. Osbert Bastani</a> and{" "}
+            <a href="https://mell.ac/">Stephen Mell</a>. I am mainly working on
+            extensions on the paper{" "}
+            <a href="https://arxiv.org/pdf/2405.11361.pdf">
+              Opportunistically Parallel Lambda Calculus
+            </a>, nicknamed Opal. 
+          </p>
+        </EntryDescription>
+      </Entry>
+      <Entry>
         <EntryTitle>Undergraduate Research Opportunities Program</EntryTitle>
         <EntrySubtitle>
           Programming Language Design and Implementation
