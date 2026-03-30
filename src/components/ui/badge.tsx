@@ -1,11 +1,11 @@
 import { cva, type VariantProps } from "class-variance-authority";
 import * as React from "react";
-
-import { cn } from "@/lib/utils";
 import { PropsWithChildren } from "react";
 
+import { cn } from "@/lib/utils";
+
 const badgeVariants = cva(
-  "inline-flex items-center rounded-md border px-2 py-0.5 text-xs font-semibold font-mono transition-colors focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 text-nowrap",
+  "inline-flex items-center rounded-md border px-2 py-0.5 font-mono text-xs font-semibold text-nowrap transition-colors focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:outline-hidden",
   {
     variants: {
       variant: {
@@ -31,13 +31,18 @@ export interface BadgeProps
     VariantProps<typeof badgeVariants> {}
 
 export function Badge({ className, variant, ...props }: BadgeProps) {
+  const { children, ...rest } = props;
   return (
-    <div className={cn(badgeVariants({ variant }), className)} {...props} />
+    <div className={cn(badgeVariants({ variant }), className)} {...rest}>
+      {children}
+    </div>
   );
 }
 
-export const Badges = (props: PropsWithChildren) => (
-  <span className="inline-flex flex-wrap gap-x-1 gap-y-1" {...props} />
+export const Badges = ({ children, ...props }: PropsWithChildren) => (
+  <span className="inline-flex flex-wrap gap-x-1 gap-y-1" {...props}>
+    {children}
+  </span>
 );
 export const DarkBadge = ({ children }: PropsWithChildren) => (
   <Badge>{children}</Badge>

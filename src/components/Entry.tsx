@@ -1,18 +1,8 @@
-"use client";
+import { PropsWithChildren } from "react";
 
-import { Badges } from "@/components/ui/Badge";
-import { Card, CardContent, CardHeader } from "@/components/ui/Card";
-import { Collapsible, CollapsibleContent } from "@/components/ui/collapsible";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-import { useBeforePrint } from "@/utils/useBeforePrint";
-import { createHost, createSlot } from "create-slots";
-import { ChevronsDownUp, ChevronsUpDown } from "lucide-react";
-import { PropsWithChildren, useCallback, useState } from "react";
+import { createHost, createSlot } from "@/lib/slots";
+
+import { EntryClient } from "./EntryClient";
 
 export const EntryTitle = createSlot();
 export const EntrySubtitle = createSlot();
@@ -20,73 +10,15 @@ export const EntryTime = createSlot();
 export const EntryBadges = createSlot();
 export const EntryDescription = createSlot();
 export const EntryDetails = createSlot();
-export const EntryDetailsTooltip = createSlot();
 
-export const Entry = ({ children }: PropsWithChildren) => {
-  const [collapseOpen, setCollapseOpen] = useState(false);
-
-  useBeforePrint(
-    useCallback(() => {
-      setCollapseOpen(true);
-    }, []),
-  );
-
-  return createHost(children, (Slots) => {
-    const title = Slots.getProps(EntryTitle);
-    const subtitle = Slots.getProps(EntrySubtitle);
-    const time = Slots.getProps(EntryTime);
-    const badges = Slots.getProps(EntryBadges);
-    const description = Slots.getProps(EntryDescription);
-    const details = Slots.getProps(EntryDetails);
-    const detailsTooltip = Slots.getProps(EntryDetailsTooltip);
-
-    return (
-      <Card className="break-inside-avoid">
-        <CardHeader>
-          <div className="flex items-center justify-between gap-x-2 text-base">
-            <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
-              <span {...title} />
-              <Badges {...badges} />
-            </h3>
-            <div className="text-sm tabular-nums text-gray-500" {...time} />
-          </div>
-          <h4 className="font-mono text-sm leading-none" {...subtitle} />
-        </CardHeader>
-        {description && (
-          <CardContent
-            className="mt-2 flex flex-col gap-y-2 text-xs"
-            {...description}
-          />
-        )}
-        {details && (
-          <>
-            <div
-              className="ml-auto h-4 w-4 cursor-pointer select-none print:hidden"
-              onClick={() => {
-                setCollapseOpen(!collapseOpen);
-              }}
-            >
-              <TooltipProvider delayDuration={300}>
-                <Tooltip>
-                  <TooltipTrigger>
-                    {collapseOpen ? (
-                      <ChevronsDownUp className="h-4 w-4 cursor-pointer" />
-                    ) : (
-                      <ChevronsUpDown className="h-4 w-4 cursor-pointer" />
-                    )}
-                  </TooltipTrigger>
-                  <TooltipContent {...detailsTooltip} />
-                </Tooltip>
-              </TooltipProvider>
-            </div>
-            <Collapsible open={collapseOpen}>
-              <CollapsibleContent className="overflow-hidden data-[state=closed]:animate-collapsible-up data-[state=open]:animate-collapsible-down">
-                <CardContent className="mt-2 space-y-2 text-sm" {...details} />
-              </CollapsibleContent>
-            </Collapsible>
-          </>
-        )}
-      </Card>
-    );
-  });
-};
+export const Entry = ({ children }: PropsWithChildren) =>
+  createHost(children, (Slots) => (
+    <EntryClient
+      title={Slots.getProps(EntryTitle)}
+      subtitle={Slots.getProps(EntrySubtitle)}
+      time={Slots.getProps(EntryTime)}
+      badges={Slots.getProps(EntryBadges)}
+      description={Slots.getProps(EntryDescription)}
+      details={Slots.getProps(EntryDetails)}
+    />
+  ));

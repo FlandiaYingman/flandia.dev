@@ -1,7 +1,8 @@
 import { IBM_Plex_Mono, Inter } from "next/font/google";
+import React from "react";
 
 import { cn } from "@/lib/utils";
-import React from "react";
+
 import "./globals.css";
 
 const inter = Inter({

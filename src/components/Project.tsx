@@ -1,25 +1,16 @@
-"use client";
-
-import { createHost, createSlot } from "create-slots";
 import { PropsWithChildren } from "react";
 import { twMerge } from "tailwind-merge";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "./ui/Card";
+
+import { RichContent } from "@/components/ui/rich-content";
+import { createHost, createSlot } from "@/lib/slots";
+
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
 type Status = "online" | "wip";
 
-const statusColor = (status: Status) => {
-  switch (status) {
-    case "online":
-      return "green";
-    case "wip":
-      return "amber";
-  }
+const statusColorClass: Record<Status, string> = {
+  online: "bg-green-500",
+  wip: "bg-amber-500",
 };
 
 export const ProjectTitle = createSlot("span");
@@ -39,12 +30,16 @@ export function Project({
   hiddenPrint = false,
   href,
 }: PropsWithChildren<Props>) {
-  const color = statusColor(status);
+  const colorClass = statusColorClass[status];
   return createHost(children, (Slots) => {
     const titleProps = Slots.getProps(ProjectTitle);
     const descriptionProps = Slots.getProps(ProjectDescription);
     const badgesProps = Slots.getProps(ProjectBadges);
     const labelProps = Slots.getProps(ProjectLabel);
+    const { children: titleChildren, ...projectTitleProps } = titleProps ?? {};
+    const { children: badgesChildren, ...projectBadgesProps } =
+      badgesProps ?? {};
+    const { children: labelChildren, ...projectLabelProps } = labelProps ?? {};
     return (
       <Card
         className={twMerge(
@@ -58,24 +53,27 @@ export function Project({
               <a
                 href={href}
                 target="_blank"
+                rel="noreferrer"
                 className="inline-flex items-center gap-1 hover:underline"
               >
-                <span {...titleProps} />
+                <span {...projectTitleProps}>{titleChildren}</span>
                 <span
-                  className={`mx-1 h-1 w-1 rounded-full bg-${color}-500`}
-                ></span>
+                  className={twMerge("mx-1 h-1 w-1 rounded-full", colorClass)}
+                />
               </a>
             </CardTitle>
             <div className="hidden font-mono text-xs underline print:block">
-              <span {...labelProps} />
+              <span {...projectLabelProps}>{labelChildren}</span>
             </div>
-            <CardDescription className="font-mono text-xs">
-              <span {...descriptionProps}></span>
-            </CardDescription>
+            <div className="font-mono text-xs text-muted-foreground">
+              <RichContent>{descriptionProps?.children}</RichContent>
+            </div>
           </div>
         </CardHeader>
         <CardContent className="my-auto flex">
-          <div className="mt-2 flex flex-wrap gap-1" {...badgesProps} />
+          <div className="mt-2 flex flex-wrap gap-1" {...projectBadgesProps}>
+            {badgesChildren}
+          </div>
         </CardContent>
       </Card>
     );

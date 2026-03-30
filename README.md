@@ -1,6 +1,6 @@
 # flandia.dev
 
-A résumé-like home page of myself.
+A résumé-style personal site built with Next.js, React, Tailwind CSS, and inline markdown-authored content.
 
 ## Credits
 
