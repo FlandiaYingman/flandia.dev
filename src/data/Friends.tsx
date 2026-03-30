@@ -7,22 +7,11 @@ import { FC, useEffect, useState } from "react";
 
 const FriendList: FriendProps[] = [
   {
-    href: "https://zxiebb.github.io/",
-    name: "Zequan Xie",
-    desc: (
-      <>
-        UG in CS+Bio @ HKUST '26 <br />
-        Crazy double-major guy expecting to graduate in only 3 years. 😥
-      </>
-    ),
-    avatar: "",
-  },
-  {
     href: "https://frankchen0205.github.io/",
     name: "Ruiping Chen",
     desc: (
       <>
-        UG in Data Sci. @ HKUST '27 <br />
+        UG in DS. @ HKUST '27 <br />
         Exchange @ ETH Zurich <br />
         Research Interest: <br />
         <i>He doesn't know either.</i> 😛
@@ -36,6 +25,7 @@ const FriendList: FriendProps[] = [
     desc: (
       <>
         UG in CS+Math @ HKUST '25 <br />
+        PhD in CS @ IC <br />
         3D Computer Vision and Generation Model 😎
       </>
     ),
@@ -46,7 +36,8 @@ const FriendList: FriendProps[] = [
     name: "Matheart",
     desc: (
       <>
-        Incoming PhD @ UPenn <br />
+        UG in CS+Math @ HKUST '25 <br />
+        PhD in CS+Stats @ UPenn <br />
         Theory and Empirical Science of Deep Learning and LLMs 🥺
       </>
     ),
@@ -63,14 +54,14 @@ const FriendList: FriendProps[] = [
       </>
     ),
     avatar:
-      "https://galvingao.com/content/images/size/w600/2022/04/avatar-2dim-circle_512x512.png",
+      "https://galvingao.com/content/images/2022/04/avatar-2dim-circle_512x512.png",
   },
   {
     href: "https://github.com/LeoZhu6",
     name: "Leo Zhu",
     desc: (
       <>
-        UG in ... IDK @ HKUST '27 <br />
+        UG in ... IDK @ HKUST '29 <br />
         Funny science student who claims to be from the business school 🐽
       </>
     ),
@@ -81,7 +72,7 @@ const FriendList: FriendProps[] = [
     name: "Mark Ng",
     desc: (
       <>
-        PhD in CS @ HKUST '29 <br />
+        PhD in CS @ HKUST <br />
         PL & Compiler. Oh no! His{" "}
         <u>
           <i>
@@ -119,7 +110,7 @@ const FriendList: FriendProps[] = [
     name: "Dhairya Shah",
     desc: (
       <>
-        UG in CS+Elec @ HKUST '29 <br />
+        UG in CS+ELEC @ HKUST '29 <br />
         Flandia underling 🫡. <br />
         Trying to speedrun uni and life.
       </>
