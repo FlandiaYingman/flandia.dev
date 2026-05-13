@@ -183,11 +183,17 @@ const Body = () => (
         <EntryDetails>
           {md`
             Nominated by HKUST School of Engineering to participate in an exchange program at UPenn in 2025-26 Spring.
+
+            (As of May 13, 2026)
+
+            GPA: 4.00/4.00
           `}
           <SubEntry>
             <SubEntryTitle>CIS 5450 Big Data Analytics</SubEntryTitle>
             <SubEntryTime>2025-26 Spring</SubEntryTime>
-            <SubEntryBadges></SubEntryBadges>
+            <SubEntryBadges>
+              <LightBadge>A</LightBadge>
+            </SubEntryBadges>
           </SubEntry>
           <SubEntry>
             <SubEntryTitle>
@@ -208,19 +214,25 @@ const Body = () => (
               CIS 1921 Solving Hard Problems in Practice
             </SubEntryTitle>
             <SubEntryTime>2025-26 Spring</SubEntryTime>
-            <SubEntryBadges></SubEntryBadges>
+            <SubEntryBadges>
+              <LightBadge>A</LightBadge>
+            </SubEntryBadges>
           </SubEntry>
           <SubEntry>
             <SubEntryTitle>CIS 1905 Rust Programming</SubEntryTitle>
             <SubEntryTime>2025-26 Spring</SubEntryTime>
-            <SubEntryBadges></SubEntryBadges>
+            <SubEntryBadges>
+              <LightBadge>A</LightBadge>
+            </SubEntryBadges>
           </SubEntry>
           <SubEntry>
             <SubEntryTitle>
               CIS 1904 Introduction to Haskell Programming
             </SubEntryTitle>
             <SubEntryTime>2025-26 Spring</SubEntryTime>
-            <SubEntryBadges></SubEntryBadges>
+            <SubEntryBadges>
+              <LightBadge>A</LightBadge>
+            </SubEntryBadges>
           </SubEntry>
         </EntryDetails>
       </Entry>
