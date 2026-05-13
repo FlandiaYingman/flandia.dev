@@ -96,7 +96,7 @@ export const EntryClient = ({
         {details && (
           <CollapsibleContent
             keepMounted
-            className="h-(--collapsible-panel-height) overflow-hidden transition-[height] duration-250 ease-out data-starting-style:h-0 data-ending-style:h-0 [&[hidden]:not([hidden='until-found'])]:hidden"
+            className="h-(--collapsible-panel-height) overflow-hidden transition-[height] duration-250 ease-out data-ending-style:h-0 data-starting-style:h-0 [&[hidden]:not([hidden='until-found'])]:hidden"
           >
             <CardContent className="mt-2 space-y-2 text-sm">
               <RichContent>{detailsChildren}</RichContent>
