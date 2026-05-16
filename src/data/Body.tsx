@@ -200,14 +200,18 @@ const Body = () => (
               CIS 4480/5480 Operating Systems Design and Implementation
             </SubEntryTitle>
             <SubEntryTime>2025-26 Spring</SubEntryTime>
-            <SubEntryBadges></SubEntryBadges>
+            <SubEntryBadges>
+              <LightBadge>A</LightBadge>
+            </SubEntryBadges>
           </SubEntry>
           <SubEntry>
             <SubEntryTitle>
               CIS 3990 Intermediate Computer Systems
             </SubEntryTitle>
             <SubEntryTime>2025-26 Spring</SubEntryTime>
-            <SubEntryBadges></SubEntryBadges>
+            <SubEntryBadges>
+              <LightBadge>A+</LightBadge>
+            </SubEntryBadges>
           </SubEntry>
           <SubEntry>
             <SubEntryTitle>
